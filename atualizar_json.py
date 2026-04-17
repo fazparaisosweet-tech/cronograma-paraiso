@@ -10,7 +10,7 @@ from datetime import datetime, date
 # =========================
 ARQUIVO_EXCEL = r"C:\Users\emanuel.rodrigues\Desktop\Cronograma_agricola_Paraíso.xlsx"
 
-PASTA_GITHUB = r"C:\cronograma_git\cronograma-paraiso"
+PASTA_GITHUB = r"C:\Users\emanuel.rodrigues\Documents\GitHub\cronograma-paraiso"
 
 ARQUIVO_JSON = os.path.join(PASTA_GITHUB, "dados.json")
 
