@@ -8,7 +8,7 @@ from datetime import datetime, date
 # =========================
 # CONFIGURAÇÕES
 # =========================
-ARQUIVO_EXCEL = r"C:\Users\emanuel.rodrigues\Desktop\Cronograma_agricola_Paraíso.xlsx"
+ARQUIVO_EXCEL = r"\\SERV13-BKP\Serv13 Fazendas Arquivos & BKP\Fazenda Sweet Paraiso\13 - Planejamento Agrícola\Cronograma_agricola_Paraíso.xlsx"
 
 PASTA_GITHUB = r"C:\Users\emanuel.rodrigues\Documents\GitHub\cronograma-paraiso"
 
