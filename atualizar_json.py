@@ -53,11 +53,10 @@ coluna_parcela = next(
 )
 
 if coluna_parcela:
-    df[coluna_parcela] = (
-        pd.to_numeric(df[coluna_parcela], errors="coerce")
-        .round()
-        .astype("Int64")
-    )
+    df[coluna_parcela] = pd.to_numeric(
+        df[coluna_parcela],
+        errors="coerce"
+    ).fillna(0).astype(int)
 
 # =========================
 # CONVERTER DADOS
