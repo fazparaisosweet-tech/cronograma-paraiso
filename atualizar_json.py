@@ -38,26 +38,45 @@ df = pd.read_excel(
     header=linha_cabecalho
 )
 
+# =========================
+# LIMPAR COLUNAS
+# =========================
 df.columns = df.columns.astype(str).str.strip()
 df = df.loc[:, ~df.columns.str.contains("Unnamed", case=False)]
+
+# =========================
+# FORÇAR PARCELA COMO INTEIRO
+# =========================
+coluna_parcela = next(
+    (c for c in df.columns if "parcela" in c.lower()),
+    None
+)
+
+if coluna_parcela:
+    df[coluna_parcela] = pd.to_numeric(
+        df[coluna_parcela],
+        errors="coerce"
+    ).round().astype("Int64")
 
 # =========================
 # CONVERTER DADOS
 # =========================
 def converter(valor):
-    # Trata NaN / vazio
+
     if pd.isna(valor):
         return None
 
-    # Número decimal
+    # Inteiros pandas/python
+    if isinstance(valor, (int,)):
+        return int(valor)
+
+    # Float
     if isinstance(valor, float):
         if math.isnan(valor):
             return None
-        return int(valor) if valor.is_integer() else valor
 
-    # Inteiro
-    if isinstance(valor, int):
-        return int(valor)
+        # 30.0 vira 30
+        return int(valor) if valor.is_integer() else valor
 
     # Datas
     if isinstance(valor, (datetime, date)):
@@ -75,12 +94,12 @@ def converter(valor):
 df = df.apply(lambda col: col.apply(converter))
 
 # =========================
-# GERAR LISTA
+# GERAR JSON
 # =========================
 dados = df.to_dict(orient="records")
 
 # =========================
-# LIMPEZA FINAL EXTRA
+# LIMPEZA EXTRA
 # =========================
 def limpar_nan(obj):
     if isinstance(obj, float) and math.isnan(obj):
@@ -94,7 +113,7 @@ def limpar_nan(obj):
 dados = limpar_nan(dados)
 
 # =========================
-# SALVAR JSON VÁLIDO
+# SALVAR JSON
 # =========================
 with open(ARQUIVO_JSON, "w", encoding="utf-8") as f:
     json.dump(
@@ -105,7 +124,7 @@ with open(ARQUIVO_JSON, "w", encoding="utf-8") as f:
         allow_nan=False
     )
 
-print("✅ JSON atualizado sem NaN.")
+print("✅ JSON atualizado | PARCELA como inteiro.")
 
 # =========================
 # ENVIAR GITHUB
