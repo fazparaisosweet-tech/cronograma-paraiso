@@ -45,7 +45,7 @@ df.columns = df.columns.astype(str).str.strip()
 df = df.loc[:, ~df.columns.str.contains("Unnamed", case=False)]
 
 # =========================
-# FORÇAR PARCELA COMO INTEIRO
+# FORÇAR COLUNA PARCELA COMO INTEIRO
 # =========================
 coluna_parcela = next(
     (c for c in df.columns if "parcela" in c.lower()),
@@ -53,20 +53,20 @@ coluna_parcela = next(
 )
 
 if coluna_parcela:
-    df[coluna_parcela] = pd.to_numeric(
-        df[coluna_parcela],
-        errors="coerce"
-    ).round().astype("Int64")
+    df[coluna_parcela] = (
+        pd.to_numeric(df[coluna_parcela], errors="coerce")
+        .round()
+        .astype("Int64")
+    )
 
 # =========================
 # CONVERTER DADOS
 # =========================
 def converter(valor):
-
     if pd.isna(valor):
         return None
 
-    # Inteiros pandas/python
+    # Inteiro pandas / python
     if isinstance(valor, (int,)):
         return int(valor)
 
@@ -75,8 +75,11 @@ def converter(valor):
         if math.isnan(valor):
             return None
 
-        # 30.0 vira 30
-        return int(valor) if valor.is_integer() else valor
+        # Se número sem decimal vira inteiro
+        if valor.is_integer():
+            return int(valor)
+
+        return valor
 
     # Datas
     if isinstance(valor, (datetime, date)):
@@ -99,7 +102,7 @@ df = df.apply(lambda col: col.apply(converter))
 dados = df.to_dict(orient="records")
 
 # =========================
-# LIMPEZA EXTRA
+# LIMPEZA FINAL
 # =========================
 def limpar_nan(obj):
     if isinstance(obj, float) and math.isnan(obj):
@@ -124,7 +127,7 @@ with open(ARQUIVO_JSON, "w", encoding="utf-8") as f:
         allow_nan=False
     )
 
-print("✅ JSON atualizado | PARCELA como inteiro.")
+print("✅ JSON atualizado | PARCELA sem decimal")
 
 # =========================
 # ENVIAR GITHUB
