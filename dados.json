@@ -1,6 +1,6 @@
 [
   {
-    "PARCELA": 30.0,
+    "PARCELA": 30,
     "ÁREA": "30ABCD",
     "HÁ": 5.7,
     "ESP.": "7X2,5",
@@ -56,7 +56,7 @@
     "COLHEITA": "2026-01-13",
     "ANO/MÊS": "2026/1",
     "TOTAL": 155000.0,
-    "TON/HÁ": 27192.98,
+    "TON/HÁ": 27192.98245614035,
     "PODA": 0.0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
@@ -66,7 +66,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 21.0,
+    "PARCELA": 21,
     "ÁREA": "23B,24B",
     "HÁ": 7.6,
     "ESP.": null,
@@ -122,7 +122,7 @@
     "COLHEITA": "2026-01-12",
     "ANO/MÊS": "2026/1",
     "TOTAL": 219000.0,
-    "TON/HÁ": 28815.79,
+    "TON/HÁ": 28815.789473684214,
     "PODA": 0.0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
@@ -132,7 +132,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 46.0,
+    "PARCELA": 46,
     "ÁREA": "13B",
     "HÁ": 1.5,
     "ESP.": null,
@@ -198,7 +198,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 44.0,
+    "PARCELA": 44,
     "ÁREA": "21AB,22AB",
     "HÁ": 14.2,
     "ESP.": null,
@@ -254,7 +254,7 @@
     "COLHEITA": "2026-01-23",
     "ANO/MÊS": "2026/1",
     "TOTAL": 429000.0,
-    "TON/HÁ": 30211.27,
+    "TON/HÁ": 30211.267605633806,
     "PODA": 0.0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
@@ -264,7 +264,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 25.0,
+    "PARCELA": 25,
     "ÁREA": "17A",
     "HÁ": 3.4,
     "ESP.": null,
@@ -320,7 +320,7 @@
     "COLHEITA": "2026-01-26",
     "ANO/MÊS": "2026/1",
     "TOTAL": 80000.0,
-    "TON/HÁ": 23529.41,
+    "TON/HÁ": 23529.411764705885,
     "PODA": 0.0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
@@ -330,7 +330,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 5.0,
+    "PARCELA": 5,
     "ÁREA": "14BCDE",
     "HÁ": 11.5,
     "ESP.": null,
@@ -386,7 +386,7 @@
     "COLHEITA": "2026-02-03",
     "ANO/MÊS": "2026/1",
     "TOTAL": 241000.0,
-    "TON/HÁ": 20956.52,
+    "TON/HÁ": 20956.521739130436,
     "PODA": 0.0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
@@ -396,7 +396,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 17.0,
+    "PARCELA": 17,
     "ÁREA": "18GH",
     "HÁ": 8.53,
     "ESP.": null,
@@ -452,7 +452,7 @@
     "COLHEITA": "2026-02-10",
     "ANO/MÊS": "2026/2",
     "TOTAL": 167500.0,
-    "TON/HÁ": 19636.58,
+    "TON/HÁ": 19636.57678780774,
     "PODA": 0.0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
@@ -462,7 +462,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 14.0,
+    "PARCELA": 14,
     "ÁREA": "17B",
     "HÁ": 3.8,
     "ESP.": null,
@@ -518,7 +518,7 @@
     "COLHEITA": "2026-02-19",
     "ANO/MÊS": "2026/2",
     "TOTAL": 64100.0,
-    "TON/HÁ": 16868.42,
+    "TON/HÁ": 16868.42105263158,
     "PODA": 0.0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
@@ -528,7 +528,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 42.0,
+    "PARCELA": 42,
     "ÁREA": "18CE",
     "HÁ": 12.7,
     "ESP.": null,
@@ -594,7 +594,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 23.0,
+    "PARCELA": 23,
     "ÁREA": "20AB",
     "HÁ": 9.5,
     "ESP.": null,
@@ -650,7 +650,7 @@
     "COLHEITA": "2026-03-24",
     "ANO/MÊS": "2026/3",
     "TOTAL": 251000.0,
-    "TON/HÁ": 26421.05,
+    "TON/HÁ": 26421.052631578947,
     "PODA": 0.0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
@@ -660,7 +660,7 @@
     "DESF (DAC)": 272.0
   },
   {
-    "PARCELA": 45.0,
+    "PARCELA": 45,
     "ÁREA": "20C",
     "HÁ": 2.4,
     "ESP.": null,
@@ -716,7 +716,7 @@
     "COLHEITA": "2026-03-26",
     "ANO/MÊS": "2026/3",
     "TOTAL": 19000.0,
-    "TON/HÁ": 7916.67,
+    "TON/HÁ": 7916.666666666667,
     "PODA": 0.0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
@@ -726,7 +726,7 @@
     "DESF (DAC)": 267.0
   },
   {
-    "PARCELA": 22.0,
+    "PARCELA": 22,
     "ÁREA": "20D",
     "HÁ": 7.15,
     "ESP.": null,
@@ -782,7 +782,7 @@
     "COLHEITA": "2026-04-01",
     "ANO/MÊS": "2026/3",
     "TOTAL": 113000.0,
-    "TON/HÁ": 15804.2,
+    "TON/HÁ": 15804.195804195804,
     "PODA": 0.0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
@@ -792,7 +792,7 @@
     "DESF (DAC)": 268.0
   },
   {
-    "PARCELA": 43.0,
+    "PARCELA": 43,
     "ÁREA": "25CDF",
     "HÁ": 9.15,
     "ESP.": "7x1,65",
@@ -848,7 +848,7 @@
     "COLHEITA": "2026-04-20",
     "ANO/MÊS": "2026/4",
     "TOTAL": 180000.0,
-    "TON/HÁ": 19672.13,
+    "TON/HÁ": 19672.131147540982,
     "PODA": 0.0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
@@ -858,7 +858,7 @@
     "DESF (DAC)": 259.0
   },
   {
-    "PARCELA": 20.0,
+    "PARCELA": 20,
     "ÁREA": "25ABEG",
     "HÁ": 10.0,
     "ESP.": "7x1,65",
@@ -924,7 +924,7 @@
     "DESF (DAC)": 259.0
   },
   {
-    "PARCELA": 27.0,
+    "PARCELA": 27,
     "ÁREA": "21CD,22CD,20E",
     "HÁ": 17.0,
     "ESP.": null,
@@ -980,7 +980,7 @@
     "COLHEITA": "2026-04-15",
     "ANO/MÊS": "2026/4",
     "TOTAL": 249000.0,
-    "TON/HÁ": 14647.06,
+    "TON/HÁ": 14647.058823529413,
     "PODA": 0.0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
@@ -990,7 +990,7 @@
     "DESF (DAC)": 245.0
   },
   {
-    "PARCELA": 35.0,
+    "PARCELA": 35,
     "ÁREA": "29DEFG",
     "HÁ": 14.2,
     "ESP.": "7x1,65",
@@ -1056,7 +1056,7 @@
     "DESF (DAC)": 234.0
   },
   {
-    "PARCELA": 16.0,
+    "PARCELA": 16,
     "ÁREA": "18A",
     "HÁ": 6.8,
     "ESP.": null,
@@ -1122,7 +1122,7 @@
     "DESF (DAC)": 225.0
   },
   {
-    "PARCELA": 10.0,
+    "PARCELA": 10,
     "ÁREA": "3A",
     "HÁ": 0.82,
     "ESP.": null,
@@ -1188,7 +1188,7 @@
     "DESF (DAC)": 225.0
   },
   {
-    "PARCELA": 39.0,
+    "PARCELA": 39,
     "ÁREA": "3B",
     "HÁ": 0.6,
     "ESP.": null,
@@ -1254,7 +1254,7 @@
     "DESF (DAC)": 225.0
   },
   {
-    "PARCELA": 24.0,
+    "PARCELA": 24,
     "ÁREA": "26ABCD",
     "HÁ": 16.22,
     "ESP.": "7x1,65",
@@ -1320,8 +1320,8 @@
     "DESF (DAC)": 200.0
   },
   {
-    "PARCELA": 2.0,
-    "ÁREA": 9.0,
+    "PARCELA": 2,
+    "ÁREA": 9,
     "HÁ": 5.67,
     "ESP.": "10x9,3",
     "N PLANTAS": 1013.0,
@@ -1386,7 +1386,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 1.0,
+    "PARCELA": 1,
     "ÁREA": "11-12",
     "HÁ": 15.0,
     "ESP.": "10x5",
@@ -1452,7 +1452,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 36.0,
+    "PARCELA": 36,
     "ÁREA": "27A",
     "HÁ": 3.96,
     "ESP.": "7x1,65",
@@ -1518,7 +1518,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 29.0,
+    "PARCELA": 29,
     "ÁREA": "27BC",
     "HÁ": 9.56,
     "ESP.": "7x1,65",
@@ -1584,7 +1584,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 19.0,
+    "PARCELA": 19,
     "ÁREA": "18DF",
     "HÁ": 13.2,
     "ESP.": "7x1,65",
@@ -1650,8 +1650,8 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 3.0,
-    "ÁREA": 10.0,
+    "PARCELA": 3,
+    "ÁREA": 10,
     "HÁ": 8.56,
     "ESP.": "10X6,4",
     "N PLANTAS": 1481.0,
@@ -1716,7 +1716,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 26.0,
+    "PARCELA": 26,
     "ÁREA": "23CD,24CD",
     "HÁ": 14.4,
     "ESP.": "7x1,65",
@@ -1782,7 +1782,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 38.0,
+    "PARCELA": 38,
     "ÁREA": "23A,24A",
     "HÁ": 9.0,
     "ESP.": "5X3",
@@ -1848,7 +1848,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 32.0,
+    "PARCELA": 32,
     "ÁREA": "28ACE",
     "HÁ": 5.6,
     "ESP.": "7x1,65",
@@ -1914,8 +1914,8 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 33.0,
-    "ÁREA": 5.0,
+    "PARCELA": 33,
+    "ÁREA": "5",
     "HÁ": 3.85,
     "ESP.": "8X5",
     "N PLANTAS": 771.0,
@@ -1980,8 +1980,8 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 18.0,
-    "ÁREA": 4.0,
+    "PARCELA": 18,
+    "ÁREA": 4,
     "HÁ": 2.7,
     "ESP.": "8X5",
     "N PLANTAS": 636.0,
@@ -2046,7 +2046,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 12.0,
+    "PARCELA": 12,
     "ÁREA": 1.2,
     "HÁ": 10.3,
     "ESP.": "10x5",
@@ -2112,8 +2112,8 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 7.0,
-    "ÁREA": 15.0,
+    "PARCELA": 7,
+    "ÁREA": 15,
     "HÁ": 8.12,
     "ESP.": null,
     "N PLANTAS": null,
@@ -2178,7 +2178,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 9.0,
+    "PARCELA": 9,
     "ÁREA": "16B",
     "HÁ": 17.6,
     "ESP.": null,
@@ -2244,7 +2244,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 8.0,
+    "PARCELA": 8,
     "ÁREA": "16A",
     "HÁ": 20.4,
     "ESP.": "10x9,3",
@@ -2310,7 +2310,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 34.0,
+    "PARCELA": 34,
     "ÁREA": "29A",
     "HÁ": 3.1,
     "ESP.": "7x1,65",
@@ -2376,7 +2376,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 4.0,
+    "PARCELA": 4,
     "ÁREA": "14A",
     "HÁ": 14.2,
     "ESP.": "10X5",
@@ -2442,7 +2442,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 47.0,
+    "PARCELA": 47,
     "ÁREA": "28BD",
     "HÁ": 10.0,
     "ESP.": null,
@@ -2508,8 +2508,8 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 37.0,
-    "ÁREA": 8.0,
+    "PARCELA": 37,
+    "ÁREA": 8,
     "HÁ": 3.49,
     "ESP.": "5X3",
     "N PLANTAS": 1128.0,
@@ -2574,7 +2574,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 31.0,
+    "PARCELA": 31,
     "ÁREA": "31ABCD",
     "HÁ": 9.6,
     "ESP.": null,
@@ -2640,7 +2640,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 48.0,
+    "PARCELA": 48,
     "ÁREA": "29BC",
     "HÁ": 10.2,
     "ESP.": null,
@@ -2706,7 +2706,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 11.0,
+    "PARCELA": 11,
     "ÁREA": "18B",
     "HÁ": 5.93,
     "ESP.": null,
@@ -2772,8 +2772,8 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 40.0,
-    "ÁREA": 6.0,
+    "PARCELA": 40,
+    "ÁREA": 6,
     "HÁ": 7.2,
     "ESP.": null,
     "N PLANTAS": null,
@@ -2838,7 +2838,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 13.0,
+    "PARCELA": 13,
     "ÁREA": "17C",
     "HÁ": 3.96,
     "ESP.": null,
@@ -2904,7 +2904,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 15.0,
+    "PARCELA": 15,
     "ÁREA": "19ABCD",
     "HÁ": 8.9,
     "ESP.": null,
@@ -2970,7 +2970,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 30.0,
+    "PARCELA": 30,
     "ÁREA": "30ABCD",
     "HÁ": 5.8,
     "ESP.": "7X2,5",
@@ -3036,7 +3036,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 6.0,
+    "PARCELA": 6,
     "ÁREA": "16CDE",
     "HÁ": 8.48,
     "ESP.": null,
@@ -3102,7 +3102,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 28.0,
+    "PARCELA": 28,
     "ÁREA": "13A",
     "HÁ": 2.0,
     "ESP.": null,
@@ -3168,7 +3168,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 46.0,
+    "PARCELA": 46,
     "ÁREA": "13B",
     "HÁ": 1.5,
     "ESP.": null,
@@ -3234,8 +3234,8 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 41.0,
-    "ÁREA": 7.0,
+    "PARCELA": 41,
+    "ÁREA": 7,
     "HÁ": 5.9,
     "ESP.": null,
     "N PLANTAS": null,
@@ -3300,7 +3300,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 0.0,
+    "PARCELA": 0,
     "ÁREA": null,
     "HÁ": null,
     "ESP.": null,
@@ -3354,9 +3354,9 @@
     "TIPO ADUB.": null,
     "RECOP": null,
     "COLHEITA": null,
-    "ANO/MÊS": 124.13,
+    "ANO/MÊS": 124.13000000000001,
     "TOTAL": 2625600.0,
-    "TON/HÁ": 21152.02,
+    "TON/HÁ": 21152.018045597357,
     "PODA": null,
     "1  IV (DAP)": null,
     "2  IV (DAP)": null,
@@ -3366,7 +3366,7 @@
     "DESF (DAC)": null
   },
   {
-    "PARCELA": 0.0,
+    "PARCELA": 0,
     "ÁREA": null,
     "HÁ": null,
     "ESP.": null,
@@ -3432,7 +3432,7 @@
     "DESF (DAC)": null
   },
   {
-    "PARCELA": 44.0,
+    "PARCELA": 44,
     "ÁREA": "21AB,22AB",
     "HÁ": 14.2,
     "ESP.": null,
@@ -3498,7 +3498,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 21.0,
+    "PARCELA": 21,
     "ÁREA": "23B,24B",
     "HÁ": 7.6,
     "ESP.": null,
@@ -3564,7 +3564,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 25.0,
+    "PARCELA": 25,
     "ÁREA": "17A",
     "HÁ": 3.4,
     "ESP.": null,
@@ -3630,7 +3630,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 5.0,
+    "PARCELA": 5,
     "ÁREA": "14BCDE",
     "HÁ": 11.5,
     "ESP.": null,
@@ -3696,7 +3696,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 17.0,
+    "PARCELA": 17,
     "ÁREA": "18GH",
     "HÁ": 8.53,
     "ESP.": null,
@@ -3762,7 +3762,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 14.0,
+    "PARCELA": 14,
     "ÁREA": "17B",
     "HÁ": 3.8,
     "ESP.": null,
@@ -3828,7 +3828,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 42.0,
+    "PARCELA": 42,
     "ÁREA": "18CE",
     "HÁ": 12.7,
     "ESP.": null,
@@ -3894,7 +3894,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 23.0,
+    "PARCELA": 23,
     "ÁREA": "20AB",
     "HÁ": 9.5,
     "ESP.": null,
@@ -3960,7 +3960,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 45.0,
+    "PARCELA": 45,
     "ÁREA": "20C",
     "HÁ": 2.4,
     "ESP.": null,
@@ -4026,7 +4026,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 22.0,
+    "PARCELA": 22,
     "ÁREA": "20D",
     "HÁ": 7.21,
     "ESP.": null,
@@ -4092,7 +4092,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 43.0,
+    "PARCELA": 43,
     "ÁREA": "25CDF",
     "HÁ": 9.15,
     "ESP.": "7x1,65",
@@ -4158,7 +4158,7 @@
     "DESF (DAC)": 0.0
   },
   {
-    "PARCELA": 20.0,
+    "PARCELA": 20,
     "ÁREA": "25ABEG",
     "HÁ": 10.0,
     "ESP.": "7x1,65",
