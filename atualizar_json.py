@@ -65,34 +65,30 @@ def converter(valor):
     if pd.isna(valor):
         return None
 
-    # Inteiro pandas / python
-    if isinstance(valor, (int,)):
-        return int(valor)
-
-    # Float
-    if isinstance(valor, float):
-        if math.isnan(valor):
-            return None
-
-        # Se número sem decimal vira inteiro
-        if valor.is_integer():
-            return int(valor)
-
-        return valor
-
     # Datas
     if isinstance(valor, (datetime, date)):
         return valor.strftime("%Y-%m-%d")
 
+    # Números pandas/python
+    if isinstance(valor, (int, float)):
+        if pd.isna(valor):
+            return None
+        return round(float(valor), 2)
+
     # Texto
     if isinstance(valor, str):
         v = valor.strip()
+
         if v == "" or v == "-":
             return None
-        return v
+
+        # tenta converter número com vírgula
+        try:
+            return round(float(v.replace(",", ".")), 2)
+        except:
+            return v
 
     return valor
-
 df = df.apply(lambda col: col.apply(converter))
 
 # =========================
