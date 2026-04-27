@@ -32,6 +32,9 @@ for i, row in df_raw.iterrows():
         linha_cabecalho = i
         break
 
+if linha_cabecalho is None:
+    raise Exception("Cabeçalho com PARCELA não encontrado.")
+
 df = pd.read_excel(
     ARQUIVO_EXCEL,
     sheet_name=ABA_ANO,
@@ -45,7 +48,7 @@ df.columns = df.columns.astype(str).str.strip()
 df = df.loc[:, ~df.columns.str.contains("Unnamed", case=False)]
 
 # =========================
-# FORÇAR COLUNA PARCELA COMO INTEIRO
+# FORÇAR PARCELA INTEIRO
 # =========================
 coluna_parcela = next(
     (c for c in df.columns if "parcela" in c.lower()),
@@ -65,30 +68,27 @@ def converter(valor):
     if pd.isna(valor):
         return None
 
-    # Inteiro pandas / python
-    if isinstance(valor, (int,)):
+    if isinstance(valor, int):
         return int(valor)
 
-    # Float
     if isinstance(valor, float):
         if math.isnan(valor):
             return None
 
-        # Se número sem decimal vira inteiro
         if valor.is_integer():
             return int(valor)
 
         return valor
 
-    # Datas
     if isinstance(valor, (datetime, date)):
         return valor.strftime("%Y-%m-%d")
 
-    # Texto
     if isinstance(valor, str):
         v = valor.strip()
+
         if v == "" or v == "-":
             return None
+
         return v
 
     return valor
@@ -101,15 +101,18 @@ df = df.apply(lambda col: col.apply(converter))
 dados = df.to_dict(orient="records")
 
 # =========================
-# LIMPEZA FINAL
+# LIMPAR NAN FINAL
 # =========================
 def limpar_nan(obj):
     if isinstance(obj, float) and math.isnan(obj):
         return None
+
     if isinstance(obj, dict):
         return {k: limpar_nan(v) for k, v in obj.items()}
+
     if isinstance(obj, list):
         return [limpar_nan(v) for v in obj]
+
     return obj
 
 dados = limpar_nan(dados)
@@ -134,7 +137,26 @@ print("✅ JSON atualizado | PARCELA sem decimal")
 os.chdir(PASTA_GITHUB)
 
 subprocess.run(["git", "add", "."], check=True)
-subprocess.run(["git", "commit", "-m", "Atualização automática"], check=True)
-subprocess.run(["git", "push"], check=True)
 
-print("✅ GitHub atualizado com sucesso.")
+# VERIFICA SE EXISTE ALTERAÇÃO
+status = subprocess.run(
+    ["git", "status", "--porcelain"],
+    capture_output=True,
+    text=True
+)
+
+if status.stdout.strip():
+    subprocess.run(
+        ["git", "commit", "-m", "Atualização automática"],
+        check=True
+    )
+
+    subprocess.run(
+        ["git", "push"],
+        check=True
+    )
+
+    print("✅ GitHub atualizado com sucesso.")
+
+else:
+    print("ℹ️ Nenhuma alteração detectada. Nada para enviar.")
