@@ -198,7 +198,9 @@
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "COMENTARIOS": {
+      "4 PRV": "[Comentário encadeado]\n\nSua versão do Excel permite que você leia este comentário encadeado, no entanto, as edições serão removidas se o arquivo for aberto em uma versão mais recente do Excel. Saiba mais: https://go.microsoft.com/fwlink/?linkid=870924\n\nComentário:\n    Adicionar Score e Decis"
+    }
   },
   {
     "PARCELA": 44,
@@ -265,7 +267,9 @@
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "COMENTARIOS": {
+      "2 PRV": "[Comentário encadeado]\n\nSua versão do Excel permite que você leia este comentário encadeado, no entanto, as edições serão removidas se o arquivo for aberto em uma versão mais recente do Excel. Saiba mais: https://go.microsoft.com/fwlink/?linkid=870924\n\nComentário:\n    Adicionar Stoller Zinco"
+    }
   },
   {
     "PARCELA": 25,
@@ -399,7 +403,10 @@
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "COMENTARIOS": {
+      "9 NIT": "[Comentário encadeado]\n\nSua versão do Excel permite que você leia este comentário encadeado, no entanto, as edições serão removidas se o arquivo for aberto em uma versão mais recente do Excel. Saiba mais: https://go.microsoft.com/fwlink/?linkid=870924\n\nComentário:\n    60Kg Nitrato",
+      "10 NIT": "Jusciel Bagagi:\nAdicionar NP Cuaje na parte que vegeteou"
+    }
   },
   {
     "PARCELA": 17,
@@ -533,7 +540,10 @@
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "COMENTARIOS": {
+      "8 NIT": "Jusciel Bagagi:\nAdiconar Ethrel 300 ml",
+      "9 NIT": "Jusciel Bagagi:\nAdcionar Matur"
+    }
   },
   {
     "PARCELA": 42,
@@ -600,7 +610,9 @@
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "COMENTARIOS": {
+      "1 PEG": "[Comentário encadeado]\n\nSua versão do Excel permite que você leia este comentário encadeado, no entanto, as edições serão removidas se o arquivo for aberto em uma versão mais recente do Excel. Saiba mais: https://go.microsoft.com/fwlink/?linkid=870924\n\nComentário:\n    Nitrato de Potássio - lado do sol"
+    }
   },
   {
     "PARCELA": 23,
@@ -667,7 +679,9 @@
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "COMENTARIOS": {
+      "10 NIT": "[Comentário encadeado]\n\nSua versão do Excel permite que você leia este comentário encadeado, no entanto, as edições serão removidas se o arquivo for aberto em uma versão mais recente do Excel. Saiba mais: https://go.microsoft.com/fwlink/?linkid=870924\n\nComentário:\n    Add Matur"
+    }
   },
   {
     "PARCELA": 45,
@@ -734,7 +748,11 @@
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "COMENTARIOS": {
+      "9 NIT": "[Comentário encadeado]\n\nSua versão do Excel permite que você leia este comentário encadeado, no entanto, as edições serão removidas se o arquivo for aberto em uma versão mais recente do Excel. Saiba mais: https://go.microsoft.com/fwlink/?linkid=870924\n\nComentário:\n    Add Matur",
+      "4 PEG": "Jusciel Bagagi:\nNitrato de Potássio + Acadian",
+      "5 PEG": "Jusciel Bagagi:\nNitrato de Potássio"
+    }
   },
   {
     "PARCELA": 22,
@@ -801,7 +819,9 @@
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "COMENTARIOS": {
+      "7 NIT": "[Comentário encadeado]\n\nSua versão do Excel permite que você leia este comentário encadeado, no entanto, as edições serão removidas se o arquivo for aberto em uma versão mais recente do Excel. Saiba mais: https://go.microsoft.com/fwlink/?linkid=870924\n\nComentário:\n    Add Matur"
+    }
   },
   {
     "PARCELA": 43,
@@ -868,7 +888,10 @@
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 273.0,
-    "COMENTARIOS": null
+    "COMENTARIOS": {
+      "7 NIT": "[Comentário encadeado]\n\nSua versão do Excel permite que você leia este comentário encadeado, no entanto, as edições serão removidas se o arquivo for aberto em uma versão mais recente do Excel. Saiba mais: https://go.microsoft.com/fwlink/?linkid=870924\n\nComentário:\n    Add Matur",
+      "1 PEG": "Jusciel Bagagi:\nNitrato de Calcio 60 Kg"
+    }
   },
   {
     "PARCELA": 20,
@@ -935,7 +958,9 @@
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 273.0,
-    "COMENTARIOS": null
+    "COMENTARIOS": {
+      "1 PEG": "Jusciel Bagagi:\nNitrato de Calcio 60 Kg"
+    }
   },
   {
     "PARCELA": 27,
@@ -1069,7 +1094,10 @@
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 248.0,
-    "COMENTARIOS": null
+    "COMENTARIOS": {
+      "4 NIT": "Emanuel Fernandes de Araújo Rodrigues:\notimo",
+      "5 NIT": "Emanuel Fernandes de Araújo Rodrigues:\n1258\n"
+    }
   },
   {
     "PARCELA": 16,
@@ -1404,7 +1432,9 @@
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "COMENTARIOS": {
+      "2 PEG": "[Comentário encadeado]\n\nSua versão do Excel permite que você leia este comentário encadeado, no entanto, as edições serão removidas se o arquivo for aberto em uma versão mais recente do Excel. Saiba mais: https://go.microsoft.com/fwlink/?linkid=870924\n\nComentário:\n    Refeito por conta da chuva"
+    }
   },
   {
     "PARCELA": 1,
@@ -3280,7 +3310,9 @@
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "COMENTARIOS": {
+      "4 PRV": "[Comentário encadeado]\n\nSua versão do Excel permite que você leia este comentário encadeado, no entanto, as edições serão removidas se o arquivo for aberto em uma versão mais recente do Excel. Saiba mais: https://go.microsoft.com/fwlink/?linkid=870924\n\nComentário:\n    Adicionar Score e Decis"
+    }
   },
   {
     "PARCELA": 41,
@@ -3548,7 +3580,9 @@
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "COMENTARIOS": {
+      "2 PRV": "[Comentário encadeado]\n\nSua versão do Excel permite que você leia este comentário encadeado, no entanto, as edições serão removidas se o arquivo for aberto em uma versão mais recente do Excel. Saiba mais: https://go.microsoft.com/fwlink/?linkid=870924\n\nComentário:\n    Adicionar Stoller Zinco"
+    }
   },
   {
     "PARCELA": 21,
@@ -3749,7 +3783,10 @@
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "COMENTARIOS": {
+      "9 NIT": "[Comentário encadeado]\n\nSua versão do Excel permite que você leia este comentário encadeado, no entanto, as edições serão removidas se o arquivo for aberto em uma versão mais recente do Excel. Saiba mais: https://go.microsoft.com/fwlink/?linkid=870924\n\nComentário:\n    60Kg Nitrato",
+      "10 NIT": "Jusciel Bagagi:\nAdicionar NP Cuaje na parte que vegeteou"
+    }
   },
   {
     "PARCELA": 17,
@@ -3883,7 +3920,10 @@
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "COMENTARIOS": {
+      "8 NIT": "Jusciel Bagagi:\nAdiconar Ethrel 300 ml",
+      "9 NIT": "Jusciel Bagagi:\nAdcionar Matur"
+    }
   },
   {
     "PARCELA": 42,
@@ -3950,7 +3990,9 @@
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "COMENTARIOS": {
+      "1 PEG": "[Comentário encadeado]\n\nSua versão do Excel permite que você leia este comentário encadeado, no entanto, as edições serão removidas se o arquivo for aberto em uma versão mais recente do Excel. Saiba mais: https://go.microsoft.com/fwlink/?linkid=870924\n\nComentário:\n    Nitrato de Potássio - lado do sol"
+    }
   },
   {
     "PARCELA": 23,
@@ -4017,7 +4059,9 @@
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "COMENTARIOS": {
+      "10 NIT": "[Comentário encadeado]\n\nSua versão do Excel permite que você leia este comentário encadeado, no entanto, as edições serão removidas se o arquivo for aberto em uma versão mais recente do Excel. Saiba mais: https://go.microsoft.com/fwlink/?linkid=870924\n\nComentário:\n    Add Matur"
+    }
   },
   {
     "PARCELA": 45,
@@ -4084,7 +4128,11 @@
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "COMENTARIOS": {
+      "9 NIT": "[Comentário encadeado]\n\nSua versão do Excel permite que você leia este comentário encadeado, no entanto, as edições serão removidas se o arquivo for aberto em uma versão mais recente do Excel. Saiba mais: https://go.microsoft.com/fwlink/?linkid=870924\n\nComentário:\n    Add Matur",
+      "4 PEG": "Jusciel Bagagi:\nNitrato de Potássio + Acadian",
+      "5 PEG": "Jusciel Bagagi:\nNitrato de Potássio"
+    }
   },
   {
     "PARCELA": 22,
@@ -4151,7 +4199,9 @@
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "COMENTARIOS": {
+      "7 NIT": "[Comentário encadeado]\n\nSua versão do Excel permite que você leia este comentário encadeado, no entanto, as edições serão removidas se o arquivo for aberto em uma versão mais recente do Excel. Saiba mais: https://go.microsoft.com/fwlink/?linkid=870924\n\nComentário:\n    Add Matur"
+    }
   },
   {
     "PARCELA": 43,
@@ -4218,7 +4268,10 @@
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "COMENTARIOS": {
+      "7 NIT": "[Comentário encadeado]\n\nSua versão do Excel permite que você leia este comentário encadeado, no entanto, as edições serão removidas se o arquivo for aberto em uma versão mais recente do Excel. Saiba mais: https://go.microsoft.com/fwlink/?linkid=870924\n\nComentário:\n    Add Matur",
+      "1 PEG": "Jusciel Bagagi:\nNitrato de Calcio 60 Kg"
+    }
   },
   {
     "PARCELA": 20,
@@ -4285,6 +4338,8 @@
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "COMENTARIOS": {
+      "1 PEG": "Jusciel Bagagi:\nNitrato de Calcio 60 Kg"
+    }
   }
 ]
