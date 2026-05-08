@@ -3,6 +3,7 @@ import json
 import math
 import subprocess
 import os
+import re
 from datetime import datetime, date
 from openpyxl import load_workbook
 from openpyxl.comments import Comment
@@ -19,12 +20,40 @@ ARQUIVO_JSON = os.path.join(PASTA_GITHUB, "dados.json")
 ABA_ANO = "2026"
 
 # =========================
-# LER COMENTÁRIOS DO EXCEL (VERSÃO CORRIGIDA)
+# FUNÇÃO PARA LIMPAR COMENTÁRIO
+# =========================
+def limpar_comentario(texto):
+    """
+    Remove texto padrão do Excel como '[Comentário encadeado]' e links
+    """
+    if not texto:
+        return texto
+    
+    # Remove o marcador de comentário encadeado
+    texto = re.sub(r'\[Comentário encadeado\]\s*', '', texto)
+    
+    # Remove o aviso do Excel
+    texto = re.sub(r'Sua versão do Excel permite que você leia este comentário encadeado.*?https?://[^\s]+', '', texto, flags=re.DOTALL)
+    
+    # Remove links restantes
+    texto = re.sub(r'https?://[^\s]+', '', texto)
+    
+    # Remove linhas em branco extras no início
+    texto = texto.strip()
+    
+    # Se o texto ficou vazio após limpeza, retorna None
+    if not texto or texto == "":
+        return None
+    
+    return texto
+
+# =========================
+# LER COMENTÁRIOS DO EXCEL
 # =========================
 def ler_comentarios_excel(arquivo_excel, aba_nome):
     """
     Lê todos os comentários do Excel e retorna um dicionário
-    onde a chave é (linha, coluna) e o valor é o comentário
+    onde a chave é (linha, coluna) e o valor é o comentário limpo
     """
     comentarios = {}
     
@@ -36,19 +65,18 @@ def ler_comentarios_excel(arquivo_excel, aba_nome):
             planilha = workbook[aba_nome]
             
             # Itera sobre todas as células que têm comentários
-            # Método 1: Usando cell.comment diretamente
             for row in range(1, planilha.max_row + 1):
                 for col in range(1, planilha.max_column + 1):
                     cell = planilha.cell(row=row, column=col)
                     
                     if cell.comment and isinstance(cell.comment, Comment):
                         # Comentário existe nesta célula
-                        texto_comentario = cell.comment.text
+                        texto_original = cell.comment.text
+                        texto_limpo = limpar_comentario(texto_original)
                         
-                        # Armazena no dicionário
-                        comentarios[(row, col)] = texto_comentario
-                        
-                        print(f"📝 Comentário encontrado na linha {row}, coluna {col}: {texto_comentario[:50]}...")
+                        if texto_limpo:  # Só armazena se tiver conteúdo útil
+                            comentarios[(row, col)] = texto_limpo
+                            print(f"📝 Comentário na linha {row}, coluna {col}: {texto_limpo[:50]}...")
         else:
             print(f"⚠️ Aba '{aba_nome}' não encontrada para leitura de comentários")
         
@@ -200,7 +228,7 @@ for (linha_excel, col_excel), texto in comentarios.items():
 for idx, linha in enumerate(dados):
     parcela_num = linha.get(coluna_parcela)
     
-    if parcela_num in comentarios_por_parcela:
+    if parcela_num in comentarios_por_parcela and comentarios_por_parcela[parcela_num]:
         linha['COMENTARIOS'] = comentarios_por_parcela[parcela_num]
         print(f"✅ Parcela {parcela_num}: {len(comentarios_por_parcela[parcela_num])} comentário(s) vinculado(s)")
 
