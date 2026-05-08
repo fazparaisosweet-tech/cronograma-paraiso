@@ -4,6 +4,7 @@ import math
 import subprocess
 import os
 from datetime import datetime, date
+from openpyxl import load_workbook
 
 # =========================
 # CONFIGURAÇÕES
@@ -17,8 +18,52 @@ ARQUIVO_JSON = os.path.join(PASTA_GITHUB, "dados.json")
 ABA_ANO = "2026"
 
 # =========================
-# LER EXCEL
+# LER COMENTÁRIOS DO EXCEL
 # =========================
+def ler_comentarios_excel(arquivo_excel, aba_nome):
+    """
+    Lê todos os comentários do Excel e retorna um dicionário
+    onde a chave é (linha, coluna) e o valor é o comentário
+    """
+    comentarios = {}
+    
+    try:
+        # Carrega o workbook com openpyxl para acessar comentários
+        workbook = load_workbook(arquivo_excel, data_only=True)
+        
+        if aba_nome in workbook.sheetnames:
+            planilha = workbook[aba_nome]
+            
+            for cell in planilha:
+                if cell.comment:
+                    # Comentário existe nesta célula
+                    # Converte linha e coluna para índices (0-based)
+                    linha = cell.row - 1  # openpyxl usa 1-based
+                    coluna = cell.column - 1  # openpyxl usa 1-based
+                    
+                    # Pega o texto do comentário
+                    texto_comentario = cell.comment.text
+                    
+                    # Armazena no dicionário
+                    comentarios[(linha, coluna)] = texto_comentario
+                    
+                    print(f"📝 Comentário encontrado na linha {linha+1}, coluna {coluna+1}: {texto_comentario[:50]}...")
+        else:
+            print(f"⚠️ Aba '{aba_nome}' não encontrada para leitura de comentários")
+        
+        workbook.close()
+        
+    except Exception as e:
+        print(f"⚠️ Erro ao ler comentários: {e}")
+        print("   Continuando sem comentários...")
+    
+    return comentarios
+
+# =========================
+# LER EXCEL (DADOS)
+# =========================
+print("📖 Lendo dados do Excel...")
+
 df_raw = pd.read_excel(
     ARQUIVO_EXCEL,
     sheet_name=ABA_ANO,
@@ -35,6 +80,17 @@ for i, row in df_raw.iterrows():
 if linha_cabecalho is None:
     raise Exception("Cabeçalho com PARCELA não encontrado.")
 
+print(f"📌 Cabeçalho encontrado na linha {linha_cabecalho + 1}")
+
+# =========================
+# LER COMENTÁRIOS
+# =========================
+print("\n📝 Lendo comentários do Excel...")
+comentarios = ler_comentarios_excel(ARQUIVO_EXCEL, ABA_ANO)
+
+# =========================
+# CARREGAR DADOS COM CABEÇALHO
+# =========================
 df = pd.read_excel(
     ARQUIVO_EXCEL,
     sheet_name=ABA_ANO,
@@ -96,9 +152,44 @@ def converter(valor):
 df = df.apply(lambda col: col.apply(converter))
 
 # =========================
-# GERAR JSON
+# ADICIONAR COMENTÁRIOS AOS DADOS
 # =========================
+print("\n🔗 Vinculando comentários às parcelas...")
+
+# Mapeia o índice de cada coluna
+colunas = list(df.columns)
+coluna_parcela_idx = colunas.index(coluna_parcela) if coluna_parcela in colunas else 0
+
+# Adiciona uma coluna de comentários
+df['COMENTARIOS'] = None
+
+# Converte o DataFrame para lista de dicionários
 dados = df.to_dict(orient="records")
+
+# Adiciona comentários a cada registro
+for idx, linha in enumerate(dados):
+    parcela_num = linha.get(coluna_parcela)
+    
+    # Calcula a linha real no Excel (cabeçalho + 1 + índice)
+    linha_excel = linha_cabecalho + 2 + idx  # +2 porque cabeçalho é 0-based e tem a linha do cabeçalho
+    
+    # Busca comentários para esta linha
+    comentarios_linha = {}
+    
+    for (linha_comment, coluna_comment), texto in comentarios.items():
+        # Se a linha do comentário corresponde à linha atual
+        if linha_comment == linha_excel:
+            # Obtém o nome da coluna correspondente
+            if coluna_comment < len(colunas):
+                nome_coluna = colunas[coluna_comment]
+                # Evita colunas especiais ou índice
+                if nome_coluna not in ['COMENTARIOS', coluna_parcela]:
+                    comentarios_linha[nome_coluna] = texto
+    
+    # Se houver comentários, adiciona ao registro
+    if comentarios_linha:
+        linha['COMENTARIOS'] = comentarios_linha
+        print(f"📌 Parcela {parcela_num}: {len(comentarios_linha)} comentário(s) vinculado(s)")
 
 # =========================
 # LIMPAR NAN FINAL
@@ -129,7 +220,7 @@ with open(ARQUIVO_JSON, "w", encoding="utf-8") as f:
         allow_nan=False
     )
 
-print("✅ JSON atualizado | PARCELA sem decimal")
+print(f"\n✅ JSON atualizado com {len(dados)} registros e comentários incluídos")
 
 # =========================
 # ENVIAR GITHUB
@@ -147,7 +238,7 @@ status = subprocess.run(
 
 if status.stdout.strip():
     subprocess.run(
-        ["git", "commit", "-m", "Atualização automática"],
+        ["git", "commit", "-m", "Atualização automática com comentários"],
         check=True
     )
 
