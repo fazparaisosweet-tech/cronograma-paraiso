@@ -63,8 +63,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 21,
@@ -130,8 +129,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 46,
@@ -199,7 +197,7 @@
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
-      "4 PRV": "Comentário:\n    Adicionar Score e Decis"
+      "4 PEG": "Comentário:\n    Adicionar Score e Decis"
     }
   },
   {
@@ -268,7 +266,7 @@
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
-      "2 PRV": "Comentário:\n    Adicionar Stoller Zinco"
+      "2 PEG": "Comentário:\n    Adicionar Stoller Zinco"
     }
   },
   {
@@ -335,8 +333,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 5,
@@ -404,8 +401,8 @@
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
-      "9 NIT": "Comentário:\n    60Kg Nitrato",
-      "10 NIT": "Jusciel Bagagi:\nAdicionar NP Cuaje na parte que vegeteou"
+      "4 NIT": "Comentário:\n    60Kg Nitrato",
+      "5 NIT": "Jusciel Bagagi:\nAdicionar NP Cuaje na parte que vegeteou"
     }
   },
   {
@@ -472,8 +469,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 14,
@@ -541,8 +537,8 @@
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
-      "8 NIT": "Jusciel Bagagi:\nAdiconar Ethrel 300 ml",
-      "9 NIT": "Jusciel Bagagi:\nAdcionar Matur"
+      "3 NIT": "Jusciel Bagagi:\nAdiconar Ethrel 300 ml",
+      "4 NIT": "Jusciel Bagagi:\nAdcionar Matur"
     }
   },
   {
@@ -611,7 +607,7 @@
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
-      "1 PEG": "Comentário:\n    Nitrato de Potássio - lado do sol"
+      "6 NIT": "Comentário:\n    Nitrato de Potássio - lado do sol"
     }
   },
   {
@@ -680,7 +676,7 @@
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
-      "10 NIT": "Comentário:\n    Add Matur"
+      "5 NIT": "Comentário:\n    Add Matur"
     }
   },
   {
@@ -749,9 +745,9 @@
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
-      "9 NIT": "Comentário:\n    Add Matur",
-      "4 PEG": "Jusciel Bagagi:\nNitrato de Potássio + Acadian",
-      "5 PEG": "Jusciel Bagagi:\nNitrato de Potássio"
+      "4 NIT": "Comentário:\n    Add Matur",
+      "9 NIT": "Jusciel Bagagi:\nNitrato de Potássio + Acadian",
+      "10 NIT": "Jusciel Bagagi:\nNitrato de Potássio"
     }
   },
   {
@@ -820,7 +816,7 @@
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
-      "7 NIT": "Comentário:\n    Add Matur"
+      "2 NIT": "Comentário:\n    Add Matur"
     }
   },
   {
@@ -889,8 +885,8 @@
     "IF (DAC)": 0.0,
     "DESF (DAC)": 273.0,
     "COMENTARIOS": {
-      "7 NIT": "Comentário:\n    Add Matur",
-      "1 PEG": "Jusciel Bagagi:\nNitrato de Calcio 60 Kg"
+      "2 NIT": "Comentário:\n    Add Matur",
+      "6 NIT": "Jusciel Bagagi:\nNitrato de Calcio 60 Kg"
     }
   },
   {
@@ -959,7 +955,7 @@
     "IF (DAC)": 0.0,
     "DESF (DAC)": 273.0,
     "COMENTARIOS": {
-      "1 PEG": "Jusciel Bagagi:\nNitrato de Calcio 60 Kg"
+      "6 NIT": "Jusciel Bagagi:\nNitrato de Calcio 60 Kg"
     }
   },
   {
@@ -1026,8 +1022,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 259.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 259.0
   },
   {
     "PARCELA": 35,
@@ -1095,8 +1090,8 @@
     "IF (DAC)": 0.0,
     "DESF (DAC)": 248.0,
     "COMENTARIOS": {
-      "4 NIT": "Lorem ipsum dolo\nr sit amet . Os operadores gráficos e tipográficos sabem disso bem, na realidade, todas as profissões que lidam com o universo da comunicação têm um relacionamento estável com essas palavras, mas o que é? Lorem ipsum é um texto fofo sem qualquer sentido.",
-      "5 NIT": "Emanuel Fernandes de Araújo Rodrigues:\n1258"
+      "T AMIDO": "Lorem ipsum dolo\nr sit amet . Os operadores gráficos e tipográficos sabem disso bem, na realidade, todas as profissões que lidam com o universo da comunicação têm um relacionamento estável com essas palavras, mas o que é? Lorem ipsum é um texto fofo sem qualquer sentido.",
+      "Q. BROTO": "Emanuel Fernandes de Araújo Rodrigues:\n1258"
     }
   },
   {
@@ -1163,8 +1158,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 239.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 239.0
   },
   {
     "PARCELA": 10,
@@ -1230,8 +1224,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 239.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 239.0
   },
   {
     "PARCELA": 39,
@@ -1297,8 +1290,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 239.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 239.0
   },
   {
     "PARCELA": 24,
@@ -1364,8 +1356,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 214.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 214.0
   },
   {
     "PARCELA": 2,
@@ -1433,7 +1424,7 @@
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
-      "2 PEG": "Comentário:\n    Refeito por conta da chuva"
+      "7 NIT": "Comentário:\n    Refeito por conta da chuva"
     }
   },
   {
@@ -1500,8 +1491,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 36,
@@ -1567,8 +1557,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 29,
@@ -1634,8 +1623,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 19,
@@ -1701,8 +1689,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 3,
@@ -1768,8 +1755,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 26,
@@ -1835,8 +1821,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 116.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 38,
@@ -1902,8 +1887,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 114.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 32,
@@ -1969,8 +1953,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 108.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 33,
@@ -2036,8 +2019,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 102.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 18,
@@ -2103,8 +2085,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 102.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 12,
@@ -2170,8 +2151,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 73.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 7,
@@ -2237,8 +2217,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 81.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 9,
@@ -2304,8 +2283,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 71.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 8,
@@ -2371,8 +2349,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 56.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 34,
@@ -2438,8 +2415,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 56.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 4,
@@ -2505,8 +2481,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 55.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 47,
@@ -2572,8 +2547,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 49.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 37,
@@ -2639,8 +2613,7 @@
     "DAC": 38.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 31,
@@ -2706,8 +2679,7 @@
     "DAC": 45.0,
     "MAT (DAC)": 45.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 48,
@@ -2773,8 +2745,7 @@
     "DAC": 38.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 11,
@@ -2840,8 +2811,7 @@
     "DAC": 45.0,
     "MAT (DAC)": 45.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 40,
@@ -2907,8 +2877,7 @@
     "DAC": 29.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 13,
@@ -2974,8 +2943,7 @@
     "DAC": 28.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 15,
@@ -3041,8 +3009,7 @@
     "DAC": 22.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 30,
@@ -3108,8 +3075,7 @@
     "DAC": 16.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 6,
@@ -3175,8 +3141,7 @@
     "DAC": 9.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 28,
@@ -3242,8 +3207,7 @@
     "DAC": 4.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 46,
@@ -3311,7 +3275,7 @@
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
-      "4 PRV": "Comentário:\n    Adicionar Score e Decis"
+      "4 PEG": "Comentário:\n    Adicionar Score e Decis"
     }
   },
   {
@@ -3378,8 +3342,7 @@
     "DAC": 4.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 0,
@@ -3445,8 +3408,7 @@
     "DAC": null,
     "MAT (DAC)": null,
     "IF (DAC)": null,
-    "DESF (DAC)": null,
-    "COMENTARIOS": null
+    "DESF (DAC)": null
   },
   {
     "PARCELA": 0,
@@ -3512,8 +3474,7 @@
     "DAC": null,
     "MAT (DAC)": null,
     "IF (DAC)": null,
-    "DESF (DAC)": null,
-    "COMENTARIOS": null
+    "DESF (DAC)": null
   },
   {
     "PARCELA": 44,
@@ -3581,7 +3542,7 @@
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
-      "2 PRV": "Comentário:\n    Adicionar Stoller Zinco"
+      "2 PEG": "Comentário:\n    Adicionar Stoller Zinco"
     }
   },
   {
@@ -3648,8 +3609,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 25,
@@ -3715,8 +3675,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 5,
@@ -3784,8 +3743,8 @@
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
-      "9 NIT": "Comentário:\n    60Kg Nitrato",
-      "10 NIT": "Jusciel Bagagi:\nAdicionar NP Cuaje na parte que vegeteou"
+      "4 NIT": "Comentário:\n    60Kg Nitrato",
+      "5 NIT": "Jusciel Bagagi:\nAdicionar NP Cuaje na parte que vegeteou"
     }
   },
   {
@@ -3852,8 +3811,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0,
-    "COMENTARIOS": null
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 14,
@@ -3921,8 +3879,8 @@
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
-      "8 NIT": "Jusciel Bagagi:\nAdiconar Ethrel 300 ml",
-      "9 NIT": "Jusciel Bagagi:\nAdcionar Matur"
+      "3 NIT": "Jusciel Bagagi:\nAdiconar Ethrel 300 ml",
+      "4 NIT": "Jusciel Bagagi:\nAdcionar Matur"
     }
   },
   {
@@ -3991,7 +3949,7 @@
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
-      "1 PEG": "Comentário:\n    Nitrato de Potássio - lado do sol"
+      "6 NIT": "Comentário:\n    Nitrato de Potássio - lado do sol"
     }
   },
   {
@@ -4060,7 +4018,7 @@
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
-      "10 NIT": "Comentário:\n    Add Matur"
+      "5 NIT": "Comentário:\n    Add Matur"
     }
   },
   {
@@ -4129,9 +4087,9 @@
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
-      "9 NIT": "Comentário:\n    Add Matur",
-      "4 PEG": "Jusciel Bagagi:\nNitrato de Potássio + Acadian",
-      "5 PEG": "Jusciel Bagagi:\nNitrato de Potássio"
+      "4 NIT": "Comentário:\n    Add Matur",
+      "9 NIT": "Jusciel Bagagi:\nNitrato de Potássio + Acadian",
+      "10 NIT": "Jusciel Bagagi:\nNitrato de Potássio"
     }
   },
   {
@@ -4200,7 +4158,7 @@
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
-      "7 NIT": "Comentário:\n    Add Matur"
+      "2 NIT": "Comentário:\n    Add Matur"
     }
   },
   {
@@ -4269,8 +4227,8 @@
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
-      "7 NIT": "Comentário:\n    Add Matur",
-      "1 PEG": "Jusciel Bagagi:\nNitrato de Calcio 60 Kg"
+      "2 NIT": "Comentário:\n    Add Matur",
+      "6 NIT": "Jusciel Bagagi:\nNitrato de Calcio 60 Kg"
     }
   },
   {
@@ -4339,7 +4297,7 @@
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
-      "1 PEG": "Jusciel Bagagi:\nNitrato de Calcio 60 Kg"
+      "6 NIT": "Jusciel Bagagi:\nNitrato de Calcio 60 Kg"
     }
   }
 ]

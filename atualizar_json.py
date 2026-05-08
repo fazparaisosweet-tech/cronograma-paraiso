@@ -38,61 +38,20 @@ def limpar_comentario(texto):
     # Remove links restantes
     texto = re.sub(r'https?://[^\s]+', '', texto)
     
-    # Remove linhas em branco extras no início
+    # Remove linhas em branco extras
     texto = texto.strip()
     
-    # Se o texto ficou vazio após limpeza, retorna None
     if not texto or texto == "":
         return None
     
     return texto
 
 # =========================
-# LER COMENTÁRIOS DO EXCEL
-# =========================
-def ler_comentarios_excel(arquivo_excel, aba_nome):
-    """
-    Lê todos os comentários do Excel e retorna um dicionário
-    onde a chave é (linha, coluna) e o valor é o comentário limpo
-    """
-    comentarios = {}
-    
-    try:
-        # Carrega o workbook com openpyxl para acessar comentários
-        workbook = load_workbook(arquivo_excel, data_only=True)
-        
-        if aba_nome in workbook.sheetnames:
-            planilha = workbook[aba_nome]
-            
-            # Itera sobre todas as células que têm comentários
-            for row in range(1, planilha.max_row + 1):
-                for col in range(1, planilha.max_column + 1):
-                    cell = planilha.cell(row=row, column=col)
-                    
-                    if cell.comment and isinstance(cell.comment, Comment):
-                        # Comentário existe nesta célula
-                        texto_original = cell.comment.text
-                        texto_limpo = limpar_comentario(texto_original)
-                        
-                        if texto_limpo:  # Só armazena se tiver conteúdo útil
-                            comentarios[(row, col)] = texto_limpo
-                            print(f"📝 Comentário na linha {row}, coluna {col}: {texto_limpo[:50]}...")
-        else:
-            print(f"⚠️ Aba '{aba_nome}' não encontrada para leitura de comentários")
-        
-        workbook.close()
-        
-    except Exception as e:
-        print(f"⚠️ Erro ao ler comentários: {e}")
-        print("   Continuando sem comentários...")
-    
-    return comentarios
-
-# =========================
-# LER EXCEL (DADOS)
+# LER CABEÇALHO E MAPEAR COLUNAS
 # =========================
 print("📖 Lendo dados do Excel...")
 
+# Primeiro, lê o cabeçalho para saber os nomes das colunas
 df_raw = pd.read_excel(
     ARQUIVO_EXCEL,
     sheet_name=ABA_ANO,
@@ -111,16 +70,95 @@ if linha_cabecalho is None:
 
 print(f"📌 Cabeçalho encontrado na linha {linha_cabecalho + 1}")
 
+# Lê o cabeçalho para mapear colunas
+df_header = pd.read_excel(
+    ARQUIVO_EXCEL,
+    sheet_name=ABA_ANO,
+    header=linha_cabecalho,
+    nrows=0  # Lê apenas o cabeçalho
+)
+
+# Cria um mapeamento de número da coluna (1-based) para nome da coluna
+colunas = list(df_header.columns)
+coluna_mapeamento = {}
+for idx, col in enumerate(colunas):
+    # Excel é 1-based, então coluna = idx + 1
+    coluna_mapeamento[idx + 1] = str(col).strip()
+
+print(f"📊 {len(colunas)} colunas encontradas")
+
 # =========================
-# LER COMENTÁRIOS
+# LER COMENTÁRIOS DO EXCEL
 # =========================
 print("\n📝 Lendo comentários do Excel...")
-comentarios = ler_comentarios_excel(ARQUIVO_EXCEL, ABA_ANO)
+
+def ler_comentarios_excel_com_precisao(arquivo_excel, aba_nome, coluna_mapeamento, linha_cabecalho):
+    """
+    Lê comentários e mapeia para o campo correto usando o cabeçalho
+    """
+    comentarios = {}
+    
+    try:
+        workbook = load_workbook(arquivo_excel, data_only=True)
+        
+        if aba_nome in workbook.sheetnames:
+            planilha = workbook[aba_nome]
+            
+            for row in range(1, planilha.max_row + 1):
+                for col in range(1, planilha.max_column + 1):
+                    cell = planilha.cell(row=row, column=col)
+                    
+                    if cell.comment and isinstance(cell.comment, Comment):
+                        texto_original = cell.comment.text
+                        texto_limpo = limpar_comentario(texto_original)
+                        
+                        if texto_limpo:
+                            # Verifica se é linha de dados (após cabeçalho)
+                            if row > linha_cabecalho + 1:
+                                # Obtém o nome da coluna pelo mapeamento
+                                nome_coluna = coluna_mapeamento.get(col, f"Coluna_{col}")
+                                
+                                # Obtém o número da parcela nesta linha
+                                # Procura a coluna que contém "PARCELA"
+                                parcela_col = None
+                                for c_idx, c_nome in coluna_mapeamento.items():
+                                    if "parcela" in c_nome.lower():
+                                        parcela_col = c_idx
+                                        break
+                                
+                                if parcela_col:
+                                    cell_parcela = planilha.cell(row=row, column=parcela_col)
+                                    parcela_num = cell_parcela.value
+                                    
+                                    if parcela_num and pd.notna(parcela_num):
+                                        try:
+                                            parcela_num = int(parcela_num)
+                                            key = (parcela_num, nome_coluna)
+                                            comentarios[key] = texto_limpo
+                                            print(f"📝 Parcela {parcela_num}, Coluna '{nome_coluna}': {texto_limpo[:50]}...")
+                                        except:
+                                            pass
+        else:
+            print(f"⚠️ Aba '{aba_nome}' não encontrada")
+        
+        workbook.close()
+        
+    except Exception as e:
+        print(f"⚠️ Erro ao ler comentários: {e}")
+    
+    return comentarios
+
+comentarios = ler_comentarios_excel_com_precisao(
+    ARQUIVO_EXCEL, 
+    ABA_ANO, 
+    coluna_mapeamento, 
+    linha_cabecalho
+)
 
 print(f"📊 Total de comentários encontrados: {len(comentarios)}")
 
 # =========================
-# CARREGAR DADOS COM CABEÇALHO
+# CARREGAR DADOS COMPLETOS
 # =========================
 df = pd.read_excel(
     ARQUIVO_EXCEL,
@@ -187,50 +225,22 @@ df = df.apply(lambda col: col.apply(converter))
 # =========================
 print("\n🔗 Vinculando comentários às parcelas...")
 
-# Lista todas as colunas
-colunas = list(df.columns)
-
-# Cria um mapa de colunas para índices (1-based para Excel)
-coluna_indices = {}
-for i, col in enumerate(colunas):
-    coluna_indices[col] = i + 1  # +1 porque Excel é 1-based
-
-# Adiciona uma coluna de comentários
-df['COMENTARIOS'] = None
-
 # Converte o DataFrame para lista de dicionários
 dados = df.to_dict(orient="records")
 
-# Mapeia comentários por parcela e coluna
-comentarios_por_parcela = {}
-
-for (linha_excel, col_excel), texto in comentarios.items():
-    # A linha do cabeçalho está na posição linha_cabecalho + 1 (1-based)
-    # As linhas de dados começam em linha_cabecalho + 2
-    linha_dados = linha_excel - (linha_cabecalho + 2)  # Índice do DataFrame (0-based)
-    
-    # Verifica se é uma linha de dados (não é cabeçalho)
-    if linha_dados >= 0 and linha_dados < len(dados):
-        # Obtém o nome da coluna pelo índice
-        for nome_col, idx_col in coluna_indices.items():
-            if idx_col == col_excel:
-                # Adiciona o comentário ao mapa
-                parcela_num = dados[linha_dados].get(coluna_parcela)
-                
-                if parcela_num not in comentarios_por_parcela:
-                    comentarios_por_parcela[parcela_num] = {}
-                
-                comentarios_por_parcela[parcela_num][nome_col] = texto
-                print(f"📌 Parcela {parcela_num}: Comentário em '{nome_col}'")
-                break
-
-# Adiciona os comentários aos dados
+# Adiciona comentários a cada parcela
 for idx, linha in enumerate(dados):
     parcela_num = linha.get(coluna_parcela)
+    comentarios_parcela = {}
     
-    if parcela_num in comentarios_por_parcela and comentarios_por_parcela[parcela_num]:
-        linha['COMENTARIOS'] = comentarios_por_parcela[parcela_num]
-        print(f"✅ Parcela {parcela_num}: {len(comentarios_por_parcela[parcela_num])} comentário(s) vinculado(s)")
+    # Busca comentários para esta parcela
+    for (parcela, coluna), texto in comentarios.items():
+        if parcela == parcela_num:
+            comentarios_parcela[coluna] = texto
+    
+    if comentarios_parcela:
+        linha['COMENTARIOS'] = comentarios_parcela
+        print(f"✅ Parcela {parcela_num}: {len(comentarios_parcela)} comentário(s)")
 
 # =========================
 # LIMPAR NAN FINAL
@@ -261,7 +271,7 @@ with open(ARQUIVO_JSON, "w", encoding="utf-8") as f:
         allow_nan=False
     )
 
-print(f"\n✅ JSON atualizado com {len(dados)} registros e comentários incluídos")
+print(f"\n✅ JSON atualizado com {len(dados)} registros")
 
 # =========================
 # ENVIAR GITHUB
@@ -270,7 +280,6 @@ os.chdir(PASTA_GITHUB)
 
 subprocess.run(["git", "add", "."], check=True)
 
-# VERIFICA SE EXISTE ALTERAÇÃO
 status = subprocess.run(
     ["git", "status", "--porcelain"],
     capture_output=True,
