@@ -1012,7 +1012,7 @@
     "TOALETE": "2026-03-20",
     "TIPO ADUB.": null,
     "RECOP": null,
-    "COLHEITA": "2026-04-15",
+    "COLHEITA": "2026-05-12",
     "ANO/MÊS": "2026/4",
     "TOTAL/HÁ": 355000.0,
     "TON/HÁ": 20882.0,
@@ -1022,7 +1022,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 276.0
+    "DESF (DAC)": 277.0
   },
   {
     "PARCELA": 35,
@@ -1078,7 +1078,7 @@
     "TOALETE": "2026-04-10",
     "TIPO ADUB.": null,
     "RECOP": null,
-    "COLHEITA": "2026-04-21",
+    "COLHEITA": "2026-05-18",
     "ANO/MÊS": "2026/5",
     "TOTAL/HÁ": 336000.0,
     "TON/HÁ": 23662.0,
@@ -1088,7 +1088,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 265.0,
+    "DESF (DAC)": 266.0,
     "COMENTARIOS": {
       "T AMIDO": "Lorem ipsum dolo\nr sit amet . Os operadores gráficos e tipográficos sabem disso bem, na realidade, todas as profissões que lidam com o universo da comunicação têm um relacionamento estável com essas palavras, mas o que é? Lorem ipsum é um texto fofo sem qualquer sentido.",
       "Q. BROTO": "Emanuel Fernandes de Araújo Rodrigues:\n1258",
@@ -1149,7 +1149,7 @@
     "TOALETE": "2026-04-11",
     "TIPO ADUB.": null,
     "RECOP": null,
-    "COLHEITA": "2026-05-07",
+    "COLHEITA": "2026-05-20",
     "ANO/MÊS": "2026/5",
     "TOTAL/HÁ": 86000.0,
     "TON/HÁ": 12647.0,
@@ -1159,7 +1159,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 256.0
+    "DESF (DAC)": 257.0
   },
   {
     "PARCELA": 10,
@@ -1215,17 +1215,17 @@
     "TOALETE": "2026-04-12",
     "TIPO ADUB.": null,
     "RECOP": null,
-    "COLHEITA": "2026-05-05",
+    "COLHEITA": "2026-05-25",
     "ANO/MÊS": "2026/5",
-    "TOTAL/HÁ": 7500.0,
-    "TON/HÁ": 9146.0,
+    "TOTAL/HÁ": 9000.0,
+    "TON/HÁ": 10976.0,
     "PODA": 0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 256.0
+    "DESF (DAC)": 257.0
   },
   {
     "PARCELA": 39,
@@ -1281,17 +1281,17 @@
     "TOALETE": "2026-04-11",
     "TIPO ADUB.": null,
     "RECOP": null,
-    "COLHEITA": "2026-05-05",
+    "COLHEITA": "2026-05-25",
     "ANO/MÊS": "2026/5",
-    "TOTAL/HÁ": 7500.0,
-    "TON/HÁ": 12500.0,
+    "TOTAL/HÁ": 9000.0,
+    "TON/HÁ": 15000.0,
     "PODA": 0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 256.0
+    "DESF (DAC)": 257.0
   },
   {
     "PARCELA": 24,
@@ -1357,7 +1357,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 231.0
+    "DESF (DAC)": 232.0
   },
   {
     "PARCELA": 2,
@@ -1423,7 +1423,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 216.0,
+    "DESF (DAC)": 217.0,
     "COMENTARIOS": {
       "7 NIT": "Comentário:\n    Refeito por conta da chuva"
     }
@@ -1821,7 +1821,7 @@
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
-    "IF (DAC)": 133.0,
+    "IF (DAC)": 134.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
       "5 NIT": "Comentário:\n    1º NPCuaje",
@@ -1892,7 +1892,7 @@
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
-    "IF (DAC)": 131.0,
+    "IF (DAC)": 132.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
       "4 NIT": "Comentário:\n    1º NPCuaje",
@@ -1963,7 +1963,7 @@
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
-    "IF (DAC)": 125.0,
+    "IF (DAC)": 126.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
       "5 NIT": "Comentário:\n    1º NPCuaje",
@@ -2034,7 +2034,7 @@
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
-    "IF (DAC)": 119.0,
+    "IF (DAC)": 120.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
       "5 NIT": "Comentário:\n    1º NPCuaje"
@@ -2103,7 +2103,7 @@
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
-    "IF (DAC)": 119.0,
+    "IF (DAC)": 120.0,
     "DESF (DAC)": 0.0
   },
   {
@@ -2168,8 +2168,8 @@
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
-    "MAT (DAC)": 90.0,
-    "IF (DAC)": 0.0,
+    "MAT (DAC)": 0.0,
+    "IF (DAC)": 91.0,
     "DESF (DAC)": 0.0
   },
   {
@@ -2235,7 +2235,7 @@
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
-    "IF (DAC)": 98.0,
+    "IF (DAC)": 99.0,
     "DESF (DAC)": 0.0
   },
   {
@@ -2300,7 +2300,7 @@
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
-    "MAT (DAC)": 73.0,
+    "MAT (DAC)": 74.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0
   },
@@ -2366,7 +2366,7 @@
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
-    "MAT (DAC)": 72.0,
+    "MAT (DAC)": 73.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0
   },
@@ -2432,7 +2432,7 @@
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
-    "MAT (DAC)": 88.0,
+    "MAT (DAC)": 89.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0
   },
@@ -2498,7 +2498,7 @@
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
-    "MAT (DAC)": 73.0,
+    "MAT (DAC)": 74.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0
   },
@@ -2564,7 +2564,7 @@
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
-    "MAT (DAC)": 55.0,
+    "MAT (DAC)": 56.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0
   },
@@ -2630,7 +2630,7 @@
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
-    "MAT (DAC)": 62.0,
+    "MAT (DAC)": 63.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0
   },
@@ -2696,7 +2696,7 @@
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
-    "MAT (DAC)": 62.0,
+    "MAT (DAC)": 63.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0
   },
@@ -2762,7 +2762,7 @@
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
-    "MAT (DAC)": 66.0,
+    "MAT (DAC)": 67.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0
   },
@@ -2828,7 +2828,7 @@
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
-    "MAT (DAC)": 55.0,
+    "MAT (DAC)": 56.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0
   },
@@ -2894,7 +2894,7 @@
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
-    "MAT (DAC)": 46.0,
+    "MAT (DAC)": 47.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0
   },
@@ -2959,8 +2959,8 @@
     "PODA": 0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
-    "DAC": 45.0,
-    "MAT (DAC)": 45.0,
+    "DAC": 0.0,
+    "MAT (DAC)": 46.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0
   },
@@ -3025,7 +3025,7 @@
     "PODA": 0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
-    "DAC": 39.0,
+    "DAC": 40.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0
@@ -3091,7 +3091,7 @@
     "PODA": 0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
-    "DAC": 33.0,
+    "DAC": 34.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0
@@ -3157,7 +3157,7 @@
     "PODA": 0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
-    "DAC": 26.0,
+    "DAC": 27.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0
@@ -3223,7 +3223,7 @@
     "PODA": 0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
-    "DAC": 18.0,
+    "DAC": 19.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0
@@ -3289,7 +3289,7 @@
     "PODA": 0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
-    "DAC": 18.0,
+    "DAC": 19.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
@@ -3353,8 +3353,8 @@
     "RECOP": null,
     "COLHEITA": null,
     "ANO/MÊS": null,
-    "TOTAL/HÁ": 3168600.0,
-    "TON/HÁ": 21621.0,
+    "TOTAL/HÁ": 3171600.0,
+    "TON/HÁ": 21642.0,
     "PODA": null,
     "1  IV (DAP)": null,
     "2  IV (DAP)": null,
@@ -3490,7 +3490,7 @@
     "PODA": 0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
-    "DAC": 7.0,
+    "DAC": 8.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
@@ -3629,7 +3629,7 @@
     "PODA": 0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
-    "DAC": 0.0,
+    "DAC": 1.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0
@@ -3695,7 +3695,7 @@
     "PODA": 0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
-    "DAC": 0.0,
+    "DAC": 1.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0
@@ -3761,7 +3761,7 @@
     "PODA": 0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
-    "DAC": 0.0,
+    "DAC": 1.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0
@@ -3962,7 +3962,7 @@
     "TON/HÁ": 0.0,
     "PODA": 0,
     "1  IV (DAP)": 0.0,
-    "2  IV (DAP)": 68.0,
+    "2  IV (DAP)": 69.0,
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
@@ -4031,7 +4031,7 @@
     "TON/HÁ": 0.0,
     "PODA": 0,
     "1  IV (DAP)": 0.0,
-    "2  IV (DAP)": 58.0,
+    "2  IV (DAP)": 59.0,
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
@@ -4100,7 +4100,7 @@
     "TON/HÁ": 0.0,
     "PODA": 0,
     "1  IV (DAP)": 0.0,
-    "2  IV (DAP)": 54.0,
+    "2  IV (DAP)": 55.0,
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
@@ -4171,7 +4171,7 @@
     "TON/HÁ": 0.0,
     "PODA": 0,
     "1  IV (DAP)": 0.0,
-    "2  IV (DAP)": 46.0,
+    "2  IV (DAP)": 47.0,
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
@@ -4239,7 +4239,7 @@
     "TOTAL/HÁ": 0.0,
     "TON/HÁ": 0.0,
     "PODA": 0,
-    "1  IV (DAP)": 21.0,
+    "1  IV (DAP)": 22.0,
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
@@ -4309,7 +4309,7 @@
     "TOTAL/HÁ": 0.0,
     "TON/HÁ": 0.0,
     "PODA": 0,
-    "1  IV (DAP)": 18.0,
+    "1  IV (DAP)": 19.0,
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
@@ -4378,7 +4378,7 @@
     "TOTAL/HÁ": 0.0,
     "TON/HÁ": 0.0,
     "PODA": 0,
-    "1  IV (DAP)": 7.0,
+    "1  IV (DAP)": 8.0,
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
@@ -4444,7 +4444,7 @@
     "TOTAL/HÁ": 0.0,
     "TON/HÁ": 0.0,
     "PODA": 0,
-    "1  IV (DAP)": 2.0,
+    "1  IV (DAP)": 3.0,
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
