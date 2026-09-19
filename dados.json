@@ -1692,8 +1692,8 @@
     "RECOP": null,
     "COLHEITA": "2026-09-02",
     "ANO/MÊS": null,
-    "TOTAL/HÁ": 514800.0,
-    "TON/HÁ": 39000.0,
+    "TOTAL/HÁ": 520000.0,
+    "TON/HÁ": 39394.0,
     "PODA": 0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
@@ -1766,7 +1766,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 278.0
+    "DESF (DAC)": 0.0
   },
   {
     "PARCELA": 26,
@@ -1832,7 +1832,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 243.0,
+    "DESF (DAC)": 248.0,
     "COMENTARIOS": {
       "5 NIT": "Comentário:\n    1º NPCuaje",
       "6 NIT": "Comentário:\n    2º NPCuaje",
@@ -1903,7 +1903,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 241.0,
+    "DESF (DAC)": 246.0,
     "COMENTARIOS": {
       "4 NIT": "Comentário:\n    1º NPCuaje",
       "5 NIT": "Comentário:\n    2º NPCuaje",
@@ -1974,7 +1974,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 235.0,
+    "DESF (DAC)": 240.0,
     "COMENTARIOS": {
       "5 NIT": "Comentário:\n    1º NPCuaje",
       "6 NIT": "Comentário:\n    2º NPCuaje",
@@ -2045,7 +2045,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 229.0,
+    "DESF (DAC)": 234.0,
     "COMENTARIOS": {
       "5 NIT": "Comentário:\n    1º NPCuaje"
     }
@@ -2114,7 +2114,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 229.0,
+    "DESF (DAC)": 234.0,
     "COMENTARIOS": {
       "6 NIT": "Comentário:\n    1º Cuaje",
       "7 NIT": "Comentário:\n    2º Cuaje"
@@ -2184,7 +2184,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 200.0,
+    "DESF (DAC)": 205.0,
     "COMENTARIOS": {
       "4 NIT": "Comentário:\n    1º Cuaje",
       "5 NIT": "Comentário:\n    2º Npcuaje"
@@ -2254,7 +2254,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 208.0,
+    "DESF (DAC)": 213.0,
     "COMENTARIOS": {
       "7 NIT": "Comentário:\n    1º NPCuaje",
       "8 NIT": "Comentário:\n    2º NPCuaje",
@@ -2464,7 +2464,7 @@
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
-    "DESF (DAC)": 0.0
+    "DESF (DAC)": 203.0
   },
   {
     "PARCELA": 8,
@@ -3299,7 +3299,7 @@
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
-    "IF (DAC)": 128.0,
+    "IF (DAC)": 133.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
       "5 NIT": "Comentário:\n    1º NPcuaje"
@@ -3368,7 +3368,7 @@
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
-    "IF (DAC)": 128.0,
+    "IF (DAC)": 133.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
       "4 PEG": "Comentário:\n    Adicionar Score e Decis",
@@ -3431,8 +3431,8 @@
     "RECOP": null,
     "COLHEITA": null,
     "ANO/MÊS": null,
-    "TOTAL/HÁ": 10017750.0,
-    "TON/HÁ": 50862.0,
+    "TOTAL/HÁ": 10022950.0,
+    "TON/HÁ": 50888.0,
     "PODA": null,
     "1  IV (DAP)": null,
     "2  IV (DAP)": null,
@@ -3570,7 +3570,7 @@
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
-    "IF (DAC)": 117.0,
+    "IF (DAC)": 122.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
       "2 PEG": "Comentário:\n    Adicionar Stoller Zinco",
@@ -3642,7 +3642,7 @@
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
-    "IF (DAC)": 109.0,
+    "IF (DAC)": 114.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
       "4 NIT": "Comentário:\n    60Kg Nitrato",
@@ -3712,7 +3712,7 @@
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
-    "IF (DAC)": 100.0,
+    "IF (DAC)": 105.0,
     "DESF (DAC)": 0.0
   },
   {
@@ -3778,7 +3778,7 @@
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
-    "IF (DAC)": 99.0,
+    "IF (DAC)": 104.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
       "3 NIT": "Jusciel Bagagi:\nAdiconar Ethrel 300 ml",
@@ -3848,7 +3848,7 @@
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
-    "IF (DAC)": 93.0,
+    "IF (DAC)": 98.0,
     "DESF (DAC)": 0.0
   },
   {
@@ -3914,7 +3914,7 @@
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
-    "IF (DAC)": 93.0,
+    "IF (DAC)": 98.0,
     "DESF (DAC)": 0.0
   },
   {
@@ -3979,8 +3979,8 @@
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
-    "MAT (DAC)": 87.0,
-    "IF (DAC)": 0.0,
+    "MAT (DAC)": 0.0,
+    "IF (DAC)": 92.0,
     "DESF (DAC)": 0.0
   },
   {
@@ -4045,8 +4045,8 @@
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
-    "MAT (DAC)": 87.0,
-    "IF (DAC)": 0.0,
+    "MAT (DAC)": 0.0,
+    "IF (DAC)": 92.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
       "6 NIT": "Comentário:\n    Nitrato de Potássio - lado do sol"
@@ -4114,7 +4114,7 @@
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
-    "MAT (DAC)": 72.0,
+    "MAT (DAC)": 77.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
@@ -4183,7 +4183,7 @@
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
-    "MAT (DAC)": 72.0,
+    "MAT (DAC)": 77.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
@@ -4254,7 +4254,7 @@
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
-    "MAT (DAC)": 65.0,
+    "MAT (DAC)": 70.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
@@ -4322,8 +4322,8 @@
     "PODA": 0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
-    "DAC": 45.0,
-    "MAT (DAC)": 45.0,
+    "DAC": 0.0,
+    "MAT (DAC)": 50.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
     "COMENTARIOS": {
@@ -4392,7 +4392,7 @@
     "PODA": 0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
-    "DAC": 38.0,
+    "DAC": 43.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
@@ -4461,7 +4461,7 @@
     "PODA": 0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
-    "DAC": 22.0,
+    "DAC": 27.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0,
@@ -4532,7 +4532,7 @@
     "PODA": 0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
-    "DAC": 11.0,
+    "DAC": 16.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0
@@ -4598,7 +4598,7 @@
     "PODA": 0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
-    "DAC": 3.0,
+    "DAC": 8.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0
@@ -4664,7 +4664,7 @@
     "PODA": 0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
-    "DAC": 3.0,
+    "DAC": 8.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0
@@ -4730,7 +4730,7 @@
     "PODA": 0,
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
-    "DAC": 1.0,
+    "DAC": 6.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
     "DESF (DAC)": 0.0
@@ -4861,7 +4861,7 @@
     "TON/HÁ": 0.0,
     "PODA": 0,
     "1  IV (DAP)": 0.0,
-    "2  IV (DAP)": 71.0,
+    "2  IV (DAP)": 0.0,
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
     "IF (DAC)": 0.0,
@@ -4929,7 +4929,7 @@
     "TOTAL/HÁ": 0.0,
     "TON/HÁ": 0.0,
     "PODA": 0,
-    "1  IV (DAP)": 25.0,
+    "1  IV (DAP)": 30.0,
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
@@ -4995,7 +4995,7 @@
     "TOTAL/HÁ": 0.0,
     "TON/HÁ": 0.0,
     "PODA": 0,
-    "1  IV (DAP)": 16.0,
+    "1  IV (DAP)": 21.0,
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
@@ -5060,8 +5060,8 @@
     "ANO/MÊS": null,
     "TOTAL/HÁ": 0.0,
     "TON/HÁ": 0.0,
-    "PODA": "X",
-    "1  IV (DAP)": 3.0,
+    "PODA": 0,
+    "1  IV (DAP)": 8.0,
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
     "MAT (DAC)": 0.0,
@@ -5126,7 +5126,7 @@
     "ANO/MÊS": null,
     "TOTAL/HÁ": 0.0,
     "TON/HÁ": 0.0,
-    "PODA": 0,
+    "PODA": "X",
     "1  IV (DAP)": 0.0,
     "2  IV (DAP)": 0.0,
     "DAC": 0.0,
