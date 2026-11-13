@@ -94,7 +94,9 @@ print("\n📝 Lendo comentários do Excel...")
 
 def ler_comentarios_excel_com_precisao(arquivo_excel, aba_nome, coluna_mapeamento, linha_cabecalho):
     """
-    Lê comentários e mapeia para o campo correto usando o cabeçalho
+    Lê comentários e mapeia para (linha do Excel, nome da coluna).
+    A mesma parcela pode ter duas linhas (ciclo colhido e ciclo atual), por isso
+    o comentário fica preso à LINHA, e não ao número da parcela.
     """
     comentarios = {}
     
@@ -104,40 +106,17 @@ def ler_comentarios_excel_com_precisao(arquivo_excel, aba_nome, coluna_mapeament
         if aba_nome in workbook.sheetnames:
             planilha = workbook[aba_nome]
             
-            for row in range(1, planilha.max_row + 1):
+            for row in range(linha_cabecalho + 2, planilha.max_row + 1):
                 for col in range(1, planilha.max_column + 1):
                     cell = planilha.cell(row=row, column=col)
                     
                     if cell.comment and isinstance(cell.comment, Comment):
-                        texto_original = cell.comment.text
-                        texto_limpo = limpar_comentario(texto_original)
+                        texto_limpo = limpar_comentario(cell.comment.text)
                         
                         if texto_limpo:
-                            # Verifica se é linha de dados (após cabeçalho)
-                            if row > linha_cabecalho + 1:
-                                # Obtém o nome da coluna pelo mapeamento
-                                nome_coluna = coluna_mapeamento.get(col, f"Coluna_{col}")
-                                
-                                # Obtém o número da parcela nesta linha
-                                # Procura a coluna que contém "PARCELA"
-                                parcela_col = None
-                                for c_idx, c_nome in coluna_mapeamento.items():
-                                    if "parcela" in c_nome.lower():
-                                        parcela_col = c_idx
-                                        break
-                                
-                                if parcela_col:
-                                    cell_parcela = planilha.cell(row=row, column=parcela_col)
-                                    parcela_num = cell_parcela.value
-                                    
-                                    if parcela_num and pd.notna(parcela_num):
-                                        try:
-                                            parcela_num = int(parcela_num)
-                                            key = (parcela_num, nome_coluna)
-                                            comentarios[key] = texto_limpo
-                                            print(f"📝 Parcela {parcela_num}, Coluna '{nome_coluna}': {texto_limpo[:50]}...")
-                                        except:
-                                            pass
+                            nome_coluna = coluna_mapeamento.get(col, f"Coluna_{col}")
+                            comentarios[(row, nome_coluna)] = texto_limpo
+                            print(f"📝 Linha {row}, Coluna '{nome_coluna}': {texto_limpo[:50]}...")
         else:
             print(f"⚠️ Aba '{aba_nome}' não encontrada")
         
@@ -156,6 +135,74 @@ comentarios = ler_comentarios_excel_com_precisao(
 )
 
 print(f"📊 Total de comentários encontrados: {len(comentarios)}")
+
+# =========================
+# DATAS DIGITADAS x FÓRMULA
+# =========================
+# Regra da planilha:
+#   data DIGITADA na célula  -> operação EXECUTADA
+#   data vinda de FÓRMULA    -> PREVISÃO (programada)
+# O pandas só enxerga o valor final, então abrimos o Excel com
+# data_only=False para ver o que é fórmula.
+print("\n🔎 Verificando datas digitadas x fórmulas...")
+
+def eh_formula(cell):
+    v = cell.value
+    if cell.data_type == "f":
+        return True
+    if isinstance(v, str) and v.startswith("="):
+        return True
+    # Fórmulas de matriz/tabela vêm como objetos especiais do openpyxl
+    return v is not None and not isinstance(v, (str, int, float, bool, datetime, date))
+
+def ler_datas_digitadas(arquivo_excel, aba_nome, coluna_mapeamento, linha_cabecalho):
+    """
+    Retorna:
+      digitadas: {linha_excel: [nomes das colunas com data digitada]}
+      parcelas:  {linha_excel: número da parcela digitado na linha} (para conferência)
+    """
+    digitadas = {}
+    parcelas = {}
+    total_formulas = 0
+    total_digitadas = 0
+
+    col_parcela = next(
+        (c for c, nome in coluna_mapeamento.items() if "parcela" in nome.lower()),
+        None
+    )
+
+    workbook = load_workbook(arquivo_excel, data_only=False)
+    try:
+        planilha = workbook[aba_nome]
+        for linha in planilha.iter_rows(min_row=linha_cabecalho + 2, max_row=planilha.max_row):
+            for cell in linha:
+                if cell.value is None:
+                    continue
+                nome = coluna_mapeamento.get(cell.column)
+                if not nome:
+                    continue
+
+                if cell.column == col_parcela and isinstance(cell.value, (int, float)):
+                    parcelas[cell.row] = int(cell.value)
+
+                if eh_formula(cell):
+                    total_formulas += 1
+                elif isinstance(cell.value, (datetime, date)):
+                    digitadas.setdefault(cell.row, []).append(nome)
+                    total_digitadas += 1
+    finally:
+        workbook.close()
+
+    print(f"   ✍️  Datas digitadas (executadas): {total_digitadas}")
+    print(f"   🧮 Células com fórmula: {total_formulas}")
+    return digitadas, parcelas
+
+datas_digitadas, parcelas_por_linha = ler_datas_digitadas(
+    ARQUIVO_EXCEL,
+    ABA_ANO,
+    coluna_mapeamento,
+    linha_cabecalho
+)
 
 # =========================
 # CARREGAR DADOS COMPLETOS
@@ -228,19 +275,44 @@ print("\n🔗 Vinculando comentários às parcelas...")
 # Converte o DataFrame para lista de dicionários
 dados = df.to_dict(orient="records")
 
-# Adiciona comentários a cada parcela
+# Cada item de "dados" corresponde a uma linha do Excel, na mesma ordem:
+# item 0 = linha logo abaixo do cabeçalho.
+padrao_data = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+divergencias = 0
+
 for idx, linha in enumerate(dados):
+    linha_excel = linha_cabecalho + 2 + idx
     parcela_num = linha.get(coluna_parcela)
-    comentarios_parcela = {}
-    
-    # Busca comentários para esta parcela
-    for (parcela, coluna), texto in comentarios.items():
-        if parcela == parcela_num:
-            comentarios_parcela[coluna] = texto
-    
+
+    # Conferência: a parcela da linha do Excel tem que bater com a do pandas
+    parcela_excel = parcelas_por_linha.get(linha_excel)
+    if parcela_excel is not None and parcela_num and parcela_excel != parcela_num:
+        divergencias += 1
+
+    # Comentários desta linha
+    comentarios_parcela = {
+        coluna: texto
+        for (lin, coluna), texto in comentarios.items()
+        if lin == linha_excel
+    }
     if comentarios_parcela:
         linha['COMENTARIOS'] = comentarios_parcela
-        print(f"✅ Parcela {parcela_num}: {len(comentarios_parcela)} comentário(s)")
+        print(f"✅ Parcela {parcela_num} (linha {linha_excel}): {len(comentarios_parcela)} comentário(s)")
+
+    # Operações executadas = colunas com data digitada nesta linha
+    if parcela_num:
+        linha['EXECUTADAS'] = [
+            coluna for coluna in datas_digitadas.get(linha_excel, [])
+            if isinstance(linha.get(coluna), str) and padrao_data.match(linha[coluna])
+        ]
+
+if divergencias:
+    raise Exception(
+        f"{divergencias} linha(s) com parcela diferente entre Excel e pandas. "
+        "As linhas não estão alinhadas; JSON NÃO foi gerado para não marcar execuções erradas."
+    )
+
+print(f"✍️  Campo EXECUTADAS adicionado em {sum(1 for l in dados if 'EXECUTADAS' in l)} registros")
 
 # =========================
 # LIMPAR NAN FINAL
@@ -288,7 +360,7 @@ status = subprocess.run(
 
 if status.stdout.strip():
     subprocess.run(
-        ["git", "commit", "-m", "Atualização automática com comentários"],
+        ["git", "commit", "-m", "Atualização automática (comentários + executadas)"],
         check=True
     )
 
