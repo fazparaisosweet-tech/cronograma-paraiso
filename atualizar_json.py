@@ -4,6 +4,7 @@ import math
 import subprocess
 import os
 import re
+import glob
 from datetime import datetime, date
 from openpyxl import load_workbook
 from openpyxl.comments import Comment
@@ -18,6 +19,12 @@ PASTA_GITHUB = r"C:\Users\emanuel.rodrigues\Documents\GitHub\cronograma-paraiso"
 ARQUIVO_JSON = os.path.join(PASTA_GITHUB, "dados.json")
 
 ABA_ANO = "2026"
+
+# Pasta onde fica a planilha do protocolo de manejo (protocolo_manejo*.xlsx).
+# Por padrão, a mesma pasta do cronograma. Troque se ela estiver em outro lugar.
+PASTA_PROTOCOLO = os.path.dirname(ARQUIVO_EXCEL)
+
+ARQUIVO_PROTOCOLO_JSON = os.path.join(PASTA_GITHUB, "protocolo.json")
 
 # =========================
 # FUNÇÃO PARA LIMPAR COMENTÁRIO
@@ -346,6 +353,115 @@ with open(ARQUIVO_JSON, "w", encoding="utf-8") as f:
 print(f"\n✅ JSON atualizado com {len(dados)} registros")
 
 # =========================
+# PROTOCOLO DE MANEJO
+# =========================
+# Lê a planilha do protocolo (aba "Protocolo") e gera o protocolo.json,
+# publicado junto com o dados.json. O app baixa e guarda para usar offline.
+#
+# A planilha mais recente é escolhida sozinha: o arquivo
+# "protocolo_manejo*.xlsx" mais novo da PASTA_PROTOCOLO. Assim, quando sair a
+# v6, basta salvar o arquivo novo na pasta.
+#
+# Regras de leitura:
+#  - cada linha com AÇÃO preenchida começa uma ação; as linhas seguintes (AÇÃO
+#    vazia, célula mesclada) são mais produtos da mesma ação;
+#  - "1.1 IND V", "1.2 IND V"... viram aplicações da coluna "1 IND V";
+#  - produto "-" = ação sem produto (só a instrução da descrição).
+
+def ler_protocolo(pasta):
+    padrao = os.path.join(pasta, "protocolo_manejo*.xlsx")
+    arquivos = [a for a in glob.glob(padrao) if not os.path.basename(a).startswith("~$")]
+    if not arquivos:
+        print(f"⚠️ Protocolo: nenhum arquivo protocolo_manejo*.xlsx em {pasta}")
+        return None
+    arquivo = max(arquivos, key=os.path.getmtime)
+    print(f"\n📗 Lendo protocolo: {os.path.basename(arquivo)}")
+
+    wb = load_workbook(arquivo, data_only=True)
+    if "Protocolo" not in wb.sheetnames:
+        print("⚠️ Protocolo: aba 'Protocolo' não encontrada")
+        return None
+    ws = wb["Protocolo"]
+
+    # Versão: texto "Versão 5.260126" no topo
+    versao = None
+    for linha in ws.iter_rows(min_row=1, max_row=3, values_only=True):
+        for v in linha:
+            if isinstance(v, str) and v.strip().lower().startswith("vers"):
+                versao = v.split(None, 1)[1].strip() if len(v.split()) > 1 else v.strip()
+
+    # Cabeçalho (linha com AÇÃO)
+    inicio = None
+    for i, linha in enumerate(ws.iter_rows(min_row=1, max_row=10, values_only=True), start=1):
+        if linha and str(linha[0] or "").strip().upper() in ("AÇÃO", "ACAO", "AÇAO"):
+            inicio = i + 1
+            break
+    if inicio is None:
+        print("⚠️ Protocolo: cabeçalho AÇÃO não encontrado")
+        return None
+
+    avisos = []
+    aplicacoes = []  # na ordem da planilha
+    atual = None
+    for n, linha in enumerate(ws.iter_rows(min_row=inicio, values_only=True), start=inicio):
+        acao, descricao, produto, dose = (list(linha) + [None] * 4)[:4]
+        if acao is not None and str(acao).strip():
+            atual = {
+                "nome": " ".join(str(acao).split()),
+                "descricao": " ".join(str(descricao).split()) if descricao else "",
+                "produtos": [],
+            }
+            aplicacoes.append(atual)
+        if atual is None:
+            continue
+        if produto is None and dose is None:
+            continue
+        p = " ".join(str(produto).split()) if produto is not None else ""
+        if p in ("", "-"):
+            continue
+        if isinstance(dose, (int, float)):
+            avisos.append(f"linha {n}: '{p}' em {atual['nome']} tem dose {dose} sem unidade")
+            d = str(int(dose)) if float(dose).is_integer() else str(dose).replace(".", ",")
+        else:
+            d = " ".join(str(dose).split()) if dose is not None else ""
+        if d in ("", "-"):
+            avisos.append(f"linha {n}: '{p}' em {atual['nome']} está sem dose")
+        atual["produtos"].append({"produto": p, "dosagem_2000l": d})
+
+    # Agrupa sub-aplicações: "1.2 IND V" -> coluna "1 IND V"
+    acoes = []
+    por_coluna = {}
+    for ap in aplicacoes:
+        m = re.match(r"^(\d+)\.(\d+)\s+(.+)$", ap["nome"])
+        coluna = f"{m.group(1)} {m.group(3)}" if m else ap["nome"]
+        if coluna not in por_coluna:
+            por_coluna[coluna] = {"acao": coluna, "aplicacoes": []}
+            acoes.append(por_coluna[coluna])
+        por_coluna[coluna]["aplicacoes"].append(ap)
+
+    for a in avisos:
+        print(f"   ⚠️ {a}")
+    print(f"✅ Protocolo v{versao}: {len(acoes)} ações, {len(aplicacoes)} aplicações")
+
+    return {
+        "versao": versao,
+        "arquivo": os.path.basename(arquivo),
+        "gerado_em": datetime.now().strftime("%Y-%m-%d %H:%M"),
+        "avisos": avisos,
+        "acoes": acoes,
+    }
+
+
+try:
+    protocolo = ler_protocolo(PASTA_PROTOCOLO)
+    if protocolo:
+        with open(ARQUIVO_PROTOCOLO_JSON, "w", encoding="utf-8") as f:
+            json.dump(protocolo, f, ensure_ascii=False, indent=2)
+except Exception as e:
+    # Erro no protocolo não impede a atualização do cronograma
+    print(f"⚠️ Protocolo não atualizado: {e}")
+
+# =========================
 # ENVIAR GITHUB
 # =========================
 os.chdir(PASTA_GITHUB)
@@ -360,7 +476,7 @@ status = subprocess.run(
 
 if status.stdout.strip():
     subprocess.run(
-        ["git", "commit", "-m", "Atualização automática (comentários + executadas)"],
+        ["git", "commit", "-m", "Atualização automática (cronograma + protocolo)"],
         check=True
     )
 

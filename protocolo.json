@@ -1,0 +1,851 @@
+{
+  "versao": "5.260126",
+  "arquivo": "protocolo_manejo_v5_260126.xlsx",
+  "gerado_em": "2026-11-18 19:46",
+  "avisos": [
+    "linha 13: 'NEW COOPER / COOPER CROP' em 1.2 IND V tem dose 1 sem unidade"
+  ],
+  "acoes": [
+    {
+      "acao": "PODA/SAIA",
+      "aplicacoes": [
+        {
+          "nome": "PODA/SAIA",
+          "descricao": "Efetuar poda lateral, de topo, e saia, conforme necessidade do pomar. Avaliar em campo.",
+          "produtos": []
+        }
+      ]
+    },
+    {
+      "acao": "1 PRV PODA",
+      "aplicacoes": [
+        {
+          "nome": "1 PRV PODA",
+          "descricao": "Preventivo pós-poda, fazer uma aplicação com os seguintes produtos:",
+          "produtos": [
+            {
+              "produto": "CERCOBIM",
+              "dosagem_2000l": "2 Kg"
+            },
+            {
+              "produto": "TENAZ",
+              "dosagem_2000l": "1,5 L"
+            },
+            {
+              "produto": "LOWER 7",
+              "dosagem_2000l": "150 ml"
+            },
+            {
+              "produto": "ADESIL",
+              "dosagem_2000l": "500 ml"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "acao": "ADUB (PC)",
+      "aplicacoes": [
+        {
+          "nome": "ADUB (PC)",
+          "descricao": "Iniciar adubação de Pós-Colheita, conforme recomendação de adubação enviada via e-mail.",
+          "produtos": []
+        }
+      ]
+    },
+    {
+      "acao": "1 IND V",
+      "aplicacoes": [
+        {
+          "nome": "1.1 IND V",
+          "descricao": "1ª indução vegetativa, fazer uma aplicação com os seguintes produtos:",
+          "produtos": [
+            {
+              "produto": "SULFATO DE ZINCO",
+              "dosagem_2000l": "5 Kg"
+            },
+            {
+              "produto": "AMINOPLUS / PROTEMAX",
+              "dosagem_2000l": "2 L"
+            },
+            {
+              "produto": "ADESIL",
+              "dosagem_2000l": "500 ml"
+            }
+          ]
+        },
+        {
+          "nome": "1.2 IND V",
+          "descricao": "1ª indução vegetativa, fazer uma aplicação com os seguintes produtos:",
+          "produtos": [
+            {
+              "produto": "SULFATO DE ZINCO",
+              "dosagem_2000l": "5 Kg"
+            },
+            {
+              "produto": "NEW COOPER / COOPER CROP",
+              "dosagem_2000l": "1"
+            },
+            {
+              "produto": "AMINOPLUS / PROTEMAX",
+              "dosagem_2000l": "2 L"
+            },
+            {
+              "produto": "ADESIL",
+              "dosagem_2000l": "500 ml"
+            }
+          ]
+        },
+        {
+          "nome": "1.3 IND V",
+          "descricao": "1ª indução vegetativa, fazer uma aplicação com os seguintes produtos:",
+          "produtos": [
+            {
+              "produto": "SULFALTO DE MAGNESIO",
+              "dosagem_2000l": "10 Kg"
+            },
+            {
+              "produto": "ADESIL",
+              "dosagem_2000l": "500 ml"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "acao": "2 IND V",
+      "aplicacoes": [
+        {
+          "nome": "2.1 IND V",
+          "descricao": "2ª indução vegetativa, fazer uma aplicação com os seguintes produtos:",
+          "produtos": [
+            {
+              "produto": "SULFATO DE ZINCO",
+              "dosagem_2000l": "5 Kg"
+            },
+            {
+              "produto": "AMINOPLUS / PROTEMAX",
+              "dosagem_2000l": "2 L"
+            },
+            {
+              "produto": "ADESIL",
+              "dosagem_2000l": "500 ml"
+            }
+          ]
+        },
+        {
+          "nome": "2.2 IND V",
+          "descricao": "2ª indução vegetativa, fazer uma aplicação com os seguintes produtos:",
+          "produtos": [
+            {
+              "produto": "SULFATO DE ZINCO",
+              "dosagem_2000l": "5 Kg"
+            },
+            {
+              "produto": "NEW COOPER / COOPER CROP",
+              "dosagem_2000l": "1 L"
+            },
+            {
+              "produto": "AMINOPLUS / PROTEMAX",
+              "dosagem_2000l": "2 L"
+            },
+            {
+              "produto": "ADESIL",
+              "dosagem_2000l": "500 ml"
+            }
+          ]
+        },
+        {
+          "nome": "2.3 IND V",
+          "descricao": "2ª indução vegetativa, fazer uma aplicação com os seguintes produtos:",
+          "produtos": [
+            {
+              "produto": "SULFALTO DE MAGNESIO",
+              "dosagem_2000l": "10 Kg"
+            },
+            {
+              "produto": "ADESIL",
+              "dosagem_2000l": "500 ml"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "acao": "A. MANG",
+      "aplicacoes": [
+        {
+          "nome": "A. MANG",
+          "descricao": "Realizar o alinhamento de mangueiras e roço, deixando a área pronta para a aplicação de PBZ.",
+          "produtos": []
+        }
+      ]
+    },
+    {
+      "acao": "CULTAR",
+      "aplicacoes": [
+        {
+          "nome": "CULTAR",
+          "descricao": "Aplicar o PBZ, conforme dosagem passada pelo coordenador.",
+          "produtos": []
+        }
+      ]
+    },
+    {
+      "acao": "1 MAT",
+      "aplicacoes": [
+        {
+          "nome": "1 MAT",
+          "descricao": "1º maturador de ramo, fazer uma aplicação com os seguintes produtos:",
+          "produtos": [
+            {
+              "produto": "MATUR / KSE 40",
+              "dosagem_2000l": "4 L"
+            },
+            {
+              "produto": "MKP",
+              "dosagem_2000l": "4 L"
+            },
+            {
+              "produto": "ADESIL",
+              "dosagem_2000l": "500 ml"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "acao": "2 MAT",
+      "aplicacoes": [
+        {
+          "nome": "2 MAT",
+          "descricao": "2º maturador de ramo, fazer uma aplicação com os seguintes produtos:",
+          "produtos": [
+            {
+              "produto": "FORTE-K",
+              "dosagem_2000l": "5 L"
+            },
+            {
+              "produto": "MKP",
+              "dosagem_2000l": "4 L"
+            },
+            {
+              "produto": "ADESIL",
+              "dosagem_2000l": "500 ml"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "acao": "3 MAT",
+      "aplicacoes": [
+        {
+          "nome": "3 MAT",
+          "descricao": "3º maturador de ramo, fazer uma aplicação com os seguintes produtos:",
+          "produtos": [
+            {
+              "produto": "MATUR",
+              "dosagem_2000l": "4 L"
+            },
+            {
+              "produto": "MKP",
+              "dosagem_2000l": "4 L"
+            },
+            {
+              "produto": "BORO BIOMETAL",
+              "dosagem_2000l": "1 L"
+            },
+            {
+              "produto": "ADESIL",
+              "dosagem_2000l": "500 ml"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "acao": "4 MAT",
+      "aplicacoes": [
+        {
+          "nome": "4 MAT",
+          "descricao": "4º maturador de ramo, fazer uma aplicação com os seguintes produtos:",
+          "produtos": [
+            {
+              "produto": "FORTE-K",
+              "dosagem_2000l": "5 L"
+            },
+            {
+              "produto": "MKP",
+              "dosagem_2000l": "4 L"
+            },
+            {
+              "produto": "ADESIL",
+              "dosagem_2000l": "500 ml"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "acao": "5 MAT",
+      "aplicacoes": [
+        {
+          "nome": "5 MAT",
+          "descricao": "5º maturador de ramo, fazer uma aplicação com os seguintes produtos:",
+          "produtos": [
+            {
+              "produto": "MATUR",
+              "dosagem_2000l": "4 L"
+            },
+            {
+              "produto": "MKP",
+              "dosagem_2000l": "4 Kg"
+            },
+            {
+              "produto": "BORO BIOMETAL",
+              "dosagem_2000l": "1 L"
+            },
+            {
+              "produto": "ADESIL",
+              "dosagem_2000l": "500 ml"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "acao": "6 MAT",
+      "aplicacoes": [
+        {
+          "nome": "6 MAT",
+          "descricao": "6º maturador de ramo, fazer uma aplicação com os seguintes produtos:",
+          "produtos": [
+            {
+              "produto": "FORTE-K",
+              "dosagem_2000l": "5 L"
+            },
+            {
+              "produto": "MKP",
+              "dosagem_2000l": "4 Kg"
+            },
+            {
+              "produto": "ADESIL",
+              "dosagem_2000l": "500 ml"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "acao": "T AMIDO",
+      "aplicacoes": [
+        {
+          "nome": "T AMIDO",
+          "descricao": "Fazer teste de amido, cortando o ramo a ser avaliado ao meio, colocando Iodo Veterinário, se a parte interna do ramo escurecer, o mesmo está maturado.",
+          "produtos": []
+        }
+      ]
+    },
+    {
+      "acao": "Q. BROTO",
+      "aplicacoes": [
+        {
+          "nome": "Q. BROTO",
+          "descricao": "Se o teste de amido for satisfatório, fazer a quebra de brotos. Deve ser removido ponteiros encarquilhados (cabeça de gato), e fazer desponte deixando no mínimo 2 ramos maduros, caso não seja possível, deixar 1 ramo maduro por ponteiro. Aplicar nitrato de cálcio no dia que for feito esse trato cultural.",
+          "produtos": []
+        }
+      ]
+    },
+    {
+      "acao": "1 NIT",
+      "aplicacoes": [
+        {
+          "nome": "1 NIT",
+          "descricao": "1ª indução floral, fazer uma aplicação com os seguintes produtos:",
+          "produtos": [
+            {
+              "produto": "NITRATO DE POTASSIO",
+              "dosagem_2000l": "60 Kg"
+            },
+            {
+              "produto": "MOLIBIDATO DE SODIO",
+              "dosagem_2000l": "100 g"
+            },
+            {
+              "produto": "CERCOBIM",
+              "dosagem_2000l": "2 Kg"
+            },
+            {
+              "produto": "TENAZ",
+              "dosagem_2000l": "1,5 L"
+            },
+            {
+              "produto": "LOWER 7",
+              "dosagem_2000l": "150 ml"
+            },
+            {
+              "produto": "ADESIL",
+              "dosagem_2000l": "500 ml"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "acao": "2 NIT",
+      "aplicacoes": [
+        {
+          "nome": "2 NIT",
+          "descricao": "2ª indução floral, fazer uma aplicação com os seguintes produtos:",
+          "produtos": [
+            {
+              "produto": "NITRATO DE POTASSIO",
+              "dosagem_2000l": "60 Kg"
+            },
+            {
+              "produto": "MOLIBIDATO DE SODIO",
+              "dosagem_2000l": "100 g"
+            },
+            {
+              "produto": "BORO BIOMETAL",
+              "dosagem_2000l": "1 L"
+            },
+            {
+              "produto": "ADESIL",
+              "dosagem_2000l": "500 ml"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "acao": "3 NIT",
+      "aplicacoes": [
+        {
+          "nome": "3 NIT",
+          "descricao": "3ª indução floral, fazer uma aplicação com os seguintes produtos:",
+          "produtos": [
+            {
+              "produto": "NITRATO DE CÁLCIO YARA",
+              "dosagem_2000l": "60 Kg"
+            },
+            {
+              "produto": "ADESIL",
+              "dosagem_2000l": "500 ml"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "acao": "4 NIT",
+      "aplicacoes": [
+        {
+          "nome": "4 NIT",
+          "descricao": "4ª indução floral, fazer uma aplicação com os seguintes produtos:",
+          "produtos": [
+            {
+              "produto": "NITRATO DE CÁLCIO YARA",
+              "dosagem_2000l": "50 Kg"
+            },
+            {
+              "produto": "ACADIAN",
+              "dosagem_2000l": "2 L"
+            },
+            {
+              "produto": "BORO BIOMETAL",
+              "dosagem_2000l": "1 L"
+            },
+            {
+              "produto": "ADESIL",
+              "dosagem_2000l": "500 ml"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "acao": "5 NIT",
+      "aplicacoes": [
+        {
+          "nome": "5 NIT",
+          "descricao": "5ª indução floral, fazer uma aplicação com os seguintes produtos:",
+          "produtos": [
+            {
+              "produto": "NITRATO DE CÁLCIO YARA",
+              "dosagem_2000l": "60 Kg"
+            },
+            {
+              "produto": "ACADIAN",
+              "dosagem_2000l": "2 L"
+            },
+            {
+              "produto": "ADESIL",
+              "dosagem_2000l": "500 ml"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "acao": "6 NIT",
+      "aplicacoes": [
+        {
+          "nome": "6 NIT",
+          "descricao": "6ª indução floral, fazer uma aplicação com os seguintes produtos:",
+          "produtos": [
+            {
+              "produto": "NITRATO DE POTÁSSIO",
+              "dosagem_2000l": "60 Kg"
+            },
+            {
+              "produto": "BORO BIOMETAL",
+              "dosagem_2000l": "1 L"
+            },
+            {
+              "produto": "ADESIL",
+              "dosagem_2000l": "500 ml"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "acao": "1 PEG",
+      "aplicacoes": [
+        {
+          "nome": "1 PEG",
+          "descricao": "1º pegamento, fazer uma aplicação com os seguintes produtos:",
+          "produtos": [
+            {
+              "produto": "MS FLORADA",
+              "dosagem_2000l": "2 Kg"
+            },
+            {
+              "produto": "KELLUS FERRO / FERRIFLO / FERRO BIOMETAL",
+              "dosagem_2000l": "1 L"
+            },
+            {
+              "produto": "AJIFOL SM BORO / BORO BIOMETAL",
+              "dosagem_2000l": "2 L / 1 L"
+            },
+            {
+              "produto": "ACADIAN / TERRAMAR",
+              "dosagem_2000l": "2 L"
+            },
+            {
+              "produto": "ADESIL",
+              "dosagem_2000l": "500 ml"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "acao": "2 PEG",
+      "aplicacoes": [
+        {
+          "nome": "2 PEG",
+          "descricao": "2º pegamento, fazer uma aplicação com os seguintes produtos:",
+          "produtos": [
+            {
+              "produto": "MS FLORADA",
+              "dosagem_2000l": "2 Kg"
+            },
+            {
+              "produto": "KELLUS FERRO / FERRIFLO / FERRO BIOMETAL",
+              "dosagem_2000l": "1 L"
+            },
+            {
+              "produto": "AJIFOL SM BORO / BORO BIOMETAL",
+              "dosagem_2000l": "2 L / 1 L"
+            },
+            {
+              "produto": "ACADIAN / TERRAMAR",
+              "dosagem_2000l": "2 L"
+            },
+            {
+              "produto": "MELAÇO DE CANA",
+              "dosagem_2000l": "5 Kg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "acao": "3 PEG",
+      "aplicacoes": [
+        {
+          "nome": "3 PEG",
+          "descricao": "3º pegamento, fazer uma aplicação com os seguintes produtos:",
+          "produtos": [
+            {
+              "produto": "MS FLORADA",
+              "dosagem_2000l": "2 Kg"
+            },
+            {
+              "produto": "AJIFOL SM BORO / BORO BIOMETAL",
+              "dosagem_2000l": "2 L / 1 L"
+            },
+            {
+              "produto": "AVANT C3",
+              "dosagem_2000l": "2 L"
+            },
+            {
+              "produto": "AMINOPLUS / PROTEMAX",
+              "dosagem_2000l": "2 L"
+            },
+            {
+              "produto": "ADESIL",
+              "dosagem_2000l": "500 ml"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "acao": "4 PEG",
+      "aplicacoes": [
+        {
+          "nome": "4 PEG",
+          "descricao": "4º pegamento, fazer uma aplicação com os seguintes produtos:",
+          "produtos": [
+            {
+              "produto": "KAMAB-26",
+              "dosagem_2000l": "2 L"
+            },
+            {
+              "produto": "AJIFOL SM BORO / BORO BIOMETAL",
+              "dosagem_2000l": "2 L / 1 L"
+            },
+            {
+              "produto": "ACADIAN",
+              "dosagem_2000l": "2 L"
+            },
+            {
+              "produto": "ADESIL",
+              "dosagem_2000l": "500 ml"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "acao": "5 PEG",
+      "aplicacoes": [
+        {
+          "nome": "5 PEG",
+          "descricao": "5º pegamento, fazer uma aplicação com os seguintes produtos:",
+          "produtos": [
+            {
+              "produto": "KAMAB-26",
+              "dosagem_2000l": "2 L"
+            },
+            {
+              "produto": "AJIFOL SM BORO / BORO BIOMETAL",
+              "dosagem_2000l": "2 L / 1 L"
+            },
+            {
+              "produto": "ACADIAN",
+              "dosagem_2000l": "2 L"
+            },
+            {
+              "produto": "ADESIL",
+              "dosagem_2000l": "500 ml"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "acao": "1 PRV",
+      "aplicacoes": [
+        {
+          "nome": "1 PRV",
+          "descricao": "1º preventivo de florada, fazer uma aplicação com os seguintes produtos, no máximo 3 dias após a 3ª indução floral:",
+          "produtos": [
+            {
+              "produto": "CERCOBIM",
+              "dosagem_2000l": "2 Kg"
+            },
+            {
+              "produto": "MANZATE",
+              "dosagem_2000l": "6 Kg"
+            },
+            {
+              "produto": "LOWER 7",
+              "dosagem_2000l": "150 ml"
+            },
+            {
+              "produto": "ADESIL",
+              "dosagem_2000l": "500 ml"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "acao": "2 PRV",
+      "aplicacoes": [
+        {
+          "nome": "2 PRV",
+          "descricao": "2º preventivo de florada, fazer uma aplicação com os seguintes produtos:",
+          "produtos": [
+            {
+              "produto": "DIMEXION",
+              "dosagem_2000l": "2 L"
+            },
+            {
+              "produto": "COMET",
+              "dosagem_2000l": "800 ml"
+            },
+            {
+              "produto": "LOWER 7",
+              "dosagem_2000l": "150 ml"
+            },
+            {
+              "produto": "ADESIL",
+              "dosagem_2000l": "500 ml"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "acao": "3 PRV",
+      "aplicacoes": [
+        {
+          "nome": "3 PRV",
+          "descricao": "3º preventivo de florada, fazer uma aplicação com os seguintes produtos:",
+          "produtos": [
+            {
+              "produto": "NATIVO",
+              "dosagem_2000l": "1,5 L"
+            },
+            {
+              "produto": "KLORPAN",
+              "dosagem_2000l": "2 L"
+            },
+            {
+              "produto": "LOWER 7",
+              "dosagem_2000l": "150 ml"
+            },
+            {
+              "produto": "ADESIL",
+              "dosagem_2000l": "500 ml"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "acao": "4 PRV",
+      "aplicacoes": [
+        {
+          "nome": "4 PRV",
+          "descricao": "4º preventivo de florada, fazer uma aplicação com os seguintes produtos:",
+          "produtos": [
+            {
+              "produto": "SOCRE",
+              "dosagem_2000l": "1 L"
+            },
+            {
+              "produto": "KAISO",
+              "dosagem_2000l": "1 L"
+            },
+            {
+              "produto": "LOWER 7",
+              "dosagem_2000l": "150 ml"
+            },
+            {
+              "produto": "ADESIL",
+              "dosagem_2000l": "500 ml"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "acao": "5 PRV",
+      "aplicacoes": [
+        {
+          "nome": "5 PRV",
+          "descricao": "5º preventivo de florada, fazer uma aplicação com os seguintes produtos:",
+          "produtos": [
+            {
+              "produto": "DECIS",
+              "dosagem_2000l": "2 L"
+            },
+            {
+              "produto": "LOWER 7",
+              "dosagem_2000l": "150 ml"
+            },
+            {
+              "produto": "ADESIL",
+              "dosagem_2000l": "500 ml"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "acao": "6 PRV",
+      "aplicacoes": [
+        {
+          "nome": "6 PRV",
+          "descricao": "6º preventivo de florada, fazer uma aplicação com os seguintes produtos:",
+          "produtos": [
+            {
+              "produto": "VANTIGO",
+              "dosagem_2000l": "400 ml"
+            },
+            {
+              "produto": "LOWER 7",
+              "dosagem_2000l": "150 ml"
+            },
+            {
+              "produto": "ADESIL",
+              "dosagem_2000l": "500 ml"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "acao": "ADUB (PRD)",
+      "aplicacoes": [
+        {
+          "nome": "ADUB (PRD)",
+          "descricao": "Iniciar adubação de produção (após definição de campo), conforme enviada via e-mail.",
+          "produtos": []
+        }
+      ]
+    },
+    {
+      "acao": "1 AP CLORETO",
+      "aplicacoes": [
+        {
+          "nome": "1 AP CLORETO",
+          "descricao": "Fazer aplicação SOMENTE no período da noite.",
+          "produtos": [
+            {
+              "produto": "CLORETO DE CÁLCIO",
+              "dosagem_2000l": "30 Kg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "acao": "COLHEITA",
+      "aplicacoes": [
+        {
+          "nome": "COLHEITA",
+          "descricao": "Definir semana de colheita juntamente com o setor de captação, verificar ponto de maturação do fruto 20-30 dias após toalete.",
+          "produtos": []
+        }
+      ]
+    }
+  ]
+}
